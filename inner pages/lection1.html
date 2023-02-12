@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Лекция 1</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.css'>
+<link rel='stylesheet' href='./assets/css/font-awesome.css'>
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+
+  <div class="preloader" id="page-preloader">
+    <div class="loader"></div>
+  </div>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="logo_text" href="./main_page.html"><img class="logo" src="./assets/icon/logo.svg" alt="logo"><p class="navbar-brand">Электронное пособие по проектированию и дизайну ИС</p></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    onClick="addFilters()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+      <li class="nav-item">
+        <a class="nav-link" href="./main_page.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-collapse nav-link-show collapsed"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems1"
+        aria-controls="collapseSubItems1"
+        aria-expanded="true">
+        Лекции
+        <span class="sr-only">(current)</span></a>
+        <ul class="nav-second-level collapse collapse show" id="collapseSubItems1" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <span class="nav-link-text">
+                Лекция 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection2.html">
+              <span class="nav-link-text">Лекция 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection3.html">
+              <span class="nav-link-text">Лекция 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection4.html">
+              <span class="nav-link-text">Лекция 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection5.html">
+              <span class="nav-link-text">Лекция 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection6.html">
+              <span class="nav-link-text">Лекция 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection7.html">
+              <span class="nav-link-text">Лекция 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection8.html">
+              <span class="nav-link-text">Лекция 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection9.html">
+              <span class="nav-link-text">Лекция 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection10.html">
+              <span class="nav-link-text">Лекция 9.1. Основные понятия качества ИС./</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection11.html">
+              <span class="nav-link-text">Лекция 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems2"
+          aria-controls="collapseSubItems2"
+          aria-expanded="true"
+        >Тесты</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №4</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №5</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №6</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №7</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №8</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №9</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №10</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №12</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №13</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems3"
+        aria-controls="collapseSubItems3"
+        aria-expanded="true"
+        href="#">Практические работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №1. Анализ предметной области различными
+                методами: контент-анализ, вебометрический анализ, анализ ситуаций, 
+                моделирование и др.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №2. Изучение устройств автоматизированного 
+                сбора информации</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №3. Оценка экономической эффективности 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №4. Разработка модели архитектуры 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №5. Обоснование выбора средств 
+                проектирования информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №6. Описание бизнес-процессов заданной 
+                предметной области.</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems4"
+          aria-controls="collapseSubItems4"
+          aria-expanded="false"
+        >Самостоятельные <br> работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">
+                Самостоятельная работа №1. Организация и методы сбора информации. Анализ 
+                предметной области. Основные понятия системного и 
+                структурного анализа
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №2. Основные понятия и определения ИС. Жизненный цикл 
+                информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №3. Постановка задачи обработки информации. Основные виды, 
+                алгоритмы и процедуры обработки информации, модели и 
+                методы решения задач обработки информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №4. Основные модели построения информационных систем, их 
+                структура, особенности и области применения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №5. Сервисно - ориентированные архитектуры. Анализ 
+                интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №6. Методы и средства проектирования информационных систем. Case-средства для моделирования деловых процессов 
+                (бизнес-процессов). Инструментальная среда–структура, 
+                интерфейс, элементы управления.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №7. Принципы построения модели IDEF0: контекстная 
+                диаграмма, субъект моделирования, цель и точка зрения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №8. Диаграммы IDEF0: диаграммы декомпозиции, диаграммы 
+                дерева узлов, диаграммы только для экспозиции (FEO).</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №9. Работы (Activity). Стрелки (Arrow). Туннелирование 
+                стрелок. Нумерация работ и диаграмм. Каркас диаграммы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №10. Слияние и расщепление моделей/</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №11. Особенности информационного, программного и 
+                технического обеспечения различных видов информационных 
+                систем. Экспертные системы. Системы реального времени.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №12. Оценка экономической эффективности информационной 
+                системы. Стоимостная оценка проекта. Классификация типов 
+                оценок стоимости: оценка порядка величины, концептуальная 
+                оценка, предварительная оценка, окончательная оценка, 
+                контрольная оценка.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №13. Основные процессы управления проектом. Средства 
+                управления проектами.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems5"
+        aria-controls="collapseSubItems5"
+        aria-expanded="true"
+        href="#">Справочные материлы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems5" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Глоссарий</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Итоговый тест</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content-wrapper" id="all">
+  <div class="container-fluid">
+    <div class="change_page">
+      <a href="./main_page.html" id="arrow-back"><img title="Главная страница" src="./assets/icon/arrow-left.svg"  alt="back"></a>
+      <a id="next-button" href="./lection2.html"><img title="Лекция 2" src="./assets/icon/arrow-right.svg" alt="next"></a>
+    </div>
+
+    <h1>Основные понятия. Жизненный цикл информационных систем</h1>
+
+    <a href="../inner pages/assets/files_to_download/Лекция 1. Основные понятия. ЖЦ ИС.docx" class="download"> Скачать лекцию в виде файла </a>
+    <p class="text-vvod"> 
+      Согласно Федеральному закону «Об информации, информационных технологиях и о защите информации»:
+      <ul>
+        <li> информация – сведения (сообщения, данные) независимо от формы их представления.</b></li>
+      </ul>
+    </p>
+    <p class="text-vvod"> 
+      В литературе, посвященной компьютерной технике и программным средствам, часто употребляется термин «данные». Как правило, эти понятия взаимозаменяемы.
+    </p>
+    <p class="text-vvod"> 
+      <b>Данные </b>– это информация, представленная в виде, пригодном для обработки автоматическими средствами.
+    </p>    
+    <p class="text-vvod"> 
+      <b>Информационные технологии</b> – процессы и методы поиска, сбора, хранения, обработки, предоставления, распространения информации, а также способы осуществления таких процессов и методов.
+    </p>    <p class="text-vvod"> 
+      Информатизация общества немыслима без использования <b>информационных систем и информационно-телекоммуникационных сетей.</b>
+    </p>    
+    <p class="text-vvod"> 
+      <b>Информационная система</b> (ИС) – совокупность содержащейся в базах данных информации и обеспечивающих ее обработку информационных технологий и технических средств. 
+    </p>
+    <p class="text-vvod"> 
+      Другое определение:
+    </p>
+    <p class="text-vvod"> 
+      Под <b>информационной системой</b> обычно понимается прикладная программная подсистема, ориентированная на сбор, хранение, поиск и обработку текстовой и/или фактографической информации. 
+    </p>
+
+    <p class="text-vvod"> 
+      Подавляющее большинство информационных систем работает в режиме диалога с пользователем.
+    </p>
+    <p class="text-vvod">
+      Это определение упрощенно можно представить следующей формулой:  
+    </p>
+    <div class="img">
+      <img src="./assets/img/lection1/1.png" alt="illustration1">
+    </div>
+    <p class="text-vvod"> 
+      Программное обеспечение, входящее в состав информационных систем, реализуют:   
+      <ul>
+        <li>диалоговый ввод-вывод;</li>
+        <li>логику диалога;</li>
+        <li>прикладную логику обработки данных;</li>
+        <li>логику управления данными;</li>
+        <li>операции манипулирования файлами и (или) базами данных.</li>
+      </ul> 
+    </p>
+    <p class="text-vvod"> 
+      Определение автоматизированной системы:    <br>
+      Автоматизированная система – система, состоящая из персонала и комплекса средств автоматизации его деятельности, реализующая информационную технологию выполнения установленных функций. 
+    </p>
+    <p class="text-vvod"> 
+      Т.е. под «автоматизированной системой» понимается именно «информационная система».     
+    </p>
+    <p class="text-vvod"> 
+      ГОСТ 34.003-90 «Автоматизированные системы. Термины и определения»    
+    </p>
+    <p class="text-vvod"> 
+      Следует отметить, что автоматизированные системы могут быть не связаны с обработкой информации (например, гидроэлектростанция). 
+    </p>
+    <p class="text-vvod"> 
+      Если смотреть на второе определение, то:    <br>
+      <b>в состав «автоматизированной информационной системы» входят персонал и средства. </b>
+    </p>
+    <p class="text-vvod"> 
+      К средствам относятся:    
+    </p>
+    <p class="img"> 
+      <img src="./assets/img/lection1/2.png" alt="illustration2">
+    </p>
+    <p class="text-vvod"> 
+      <b>Информационно-телекоммуникационная сеть</b> – технологическая система, предназначенная для передачи по линиям связи информации, доступ к которой осуществляется с использованием средств вычислительной техники.    
+    </p>
+    <h2>Классификация ИС</h2>
+    <p class="text-vvod"> 
+      Информационные системы классифицируются по разным признакам. Рассмотрим наиболее часто используемые способы классификации по масштабу, по сфере применения, способу организации.    
+    </p>
+    <p class="text-vvod"> 
+      <ul>
+        <b><li>По масштабу</li></b>
+      </ul>      
+    </p>
+    <p class="img">
+      <img src="./assets/img/lection1/3.png" alt="illustration3">
+    </p>
+
+    <p class="text-vvod"> 
+      <b>1.</b>	Одиночные информационные системы реализуются на автономном персональном компьютере (сеть не используется).     
+    </p>
+    <p class="text-vvod"> 
+      Может содержать несколько простых приложений, связанных общим информационным фондом;    
+    </p>
+    <p class="text-vvod"> 
+      Рассчитана на работу одного пользователя или группы пользователей, разделяющих во времени одно рабочее место.     
+    </p>
+    <p class="text-vvod"> 
+      Подобные приложения создаются с помощью так называемых настольных, или локальных систем управления базами данных (СУБД). Среди локальных СУБД наиболее известными являются Clarion, Clipper, d Base, Microsoft Access и др.    
+    </p>
+    <p class="text-vvod"> 
+      <b>2.</b>	Групповые информационные системы 
+    </p>
+    <p class="text-vvod"> 
+      Ориентированы на коллективное использование информации членами рабочей группы;    
+    </p>
+    <p class="text-vvod"> 
+      Чаще всего строятся на базе локальной компьютерной сети;     
+    </p>
+    <p class="text-vvod"> 
+      При разработке таких приложений используются серверы баз данных (называемые также SQL - серверами) для рабочих групп.     
+    </p>
+    <p class="text-vvod"> 
+      Существует довольно большое количество различных SQL – серверов как коммерческих, так и свободно распространяемых. Среди них наиболее известны такие серверы баз данных, как Oracle, Microsoft SQL Server, Inter Base, Sybase и др.    
+    </p>
+    <p class="text-vvod"> 
+      <b>3.</b>	Корпоративные информационные системы     
+    </p>
+    <p class="text-vvod"> 
+      Являются развитием систем рабочих групп;    
+    </p>
+    <p class="text-vvod"> 
+      Ориентированы на крупные компании и могут поддерживать территориально разнесенные узлы или сети;    
+    </p>
+    <p class="text-vvod"> 
+      В основном имеют иерархическую структуру из нескольких уровней. Для таких систем характерна архитектура клиент-сервер со специализацией серверов или же многоуровневая архитектура. При разработке таких систем могут использоваться те же серверы баз данных, что и при разработке групповых информационных систем. В крупных информационных системах наибольшее распространение получили серверы Oracle, DB2 и Microsoft Server.    
+    </p>
+    <p class="text-vvod"> 
+      <ul>
+        <li><b>Классификация по сфере применения:</b>   
+          <ul>
+            <li>системы обработки транзакций;</li>
+          </ul>
+        </li>
+        
+      </ul> 
+    </p>
+    <p class="text-vvod"> 
+      характерен регулярный (возможно интенсивный) поток довольно простых транзакций, играющих роль заказов, платежей, запросов и т.п. Важными требованиями для них являются:    
+    </p>
+    <p class="text-vvod"> 
+      <ul>
+        <li>высокая производительность обработки транзакций;</li>
+        <li>гарантированная доставка информации при удаленном доступе к БД по телекоммуникациям.</li>
+        <li><b>системы поддержки принятия решений;</b> (Decision Support System, DSS)</li>
+      </ul>
+    </p>
+    <p class="text-vvod"> 
+      Системы поддержки принятия решений представляют собой другой тип информационных систем, в которых с помощью довольно сложных запросов производится отбор и анализ данных в различных разрезах: временных, географических, по другим показателям.    
+      <ul>
+        <b><li>информационно-справочные системы;</li></b>
+      </ul>
+    </p>
+    <p class="text-vvod"> 
+      Обширный класс информационно-справочных систем основан на гипертекстовых документах и мультимедиа. Наибольшее развитие такие информационные системы получили в Интернете.
+    </p>
+    <p class="text-vvod"> 
+      <ul>
+        <b><li>офисные информационные системы.</li></b>
+      </ul>    
+    </p>
+    <p class="text-vvod"> 
+      Класс офисных информационных систем нацелен на перевод бумажных документов в электронный вид, автоматизацию делопроизводства и управление документооборотом.    
+    </p>
+    <p class="text-vvod"> 
+      <ul>
+        <li>Классификация по сфере применения:
+          <ul>
+            <li>системы на основе архитектуры файл-сервер;</li>
+            <li>системы на основе архитектуры клиент-сервер;</li>
+            <li>системы на основе многоуровневой архитектуры;</li>
+            <li>системы на основе Интернет/ интранет (корп. сети) – технологий.</li>
+          </ul>   
+        </li>
+      </ul> 
+    </p>
+    <h2>Жизненный цикл информационных систем</h2>
+    <p class="text-vvod"> 
+      <b>1. Жизненный цикл ИС и его структура</b>    
+    </p>
+    <p class="text-vvod"> 
+      Жизненный цикл информационной системы – период времени, который начинается с момента принятия решения о необходимости создания информационной системы и заканчивается в момент ее полного изъятия из эксплуатации.    
+    </p>
+    <p class="text-vvod"> 
+      Методология проектирования информационных систем описывает процесс создания и сопровождения систем в виде жизненного цикла (ЖЦ) ИС, представляя его как некоторую последовательность стадий (этапов) и выполняемых на них процессов.    
+    </p>
+    <p class="text-vvod"> 
+      Для каждого этапа определяются:
+      <ul>
+        <li>состав и последовательность выполняемых работ,</li>
+        <li>получаемые результаты,</li>
+        <li>методы и средства, необходимые для выполнения работ,</li>
+        <li>роли и ответственность участников и т.д.</li>
+      </ul>    
+    </p>
+    <p class="text-vvod"> 
+      Такое формальное описание ЖЦ ИС позволяет спланировать и организовать процесс коллективной разработки и обеспечить управление этим процессом.    
+    </p>
+    <h2>Стадии жизненного цикла ИС</h2>
+    <p class="text-vvod"> 
+      Стадия – часть процесса создания ИС, ограниченная определенными временными рамками и заканчивающаяся выпуском конкретного продукта (моделей, программных компонентов, документации), определяемого заданными для данной стадии требованиями.    
+    </p>
+    
+    <p class="text-vvod"> 
+      Понятие жизненного цикла (ЖЦ) является одним из базовых понятий методологии проектирования информационных систем.    
+    </p>
+    <p class="text-vvod"> 
+      Разработка информационной системы, как правило, выполняется для определенного предприятия. Особенности деятельности предприятия или предметной области его функционирования, безусловно, влияют на состав ИС, но в то же время структуры разных предприятий в целом похожи между собой.    
+    </p>
+    <p class="text-vvod"> 
+      Каждая организация независимо от рода ее деятельности состоит из ряда подразделений, непосредственно осуществляющих тот или иной вид деятельности компании. И эта ситуация справедлива практически для всех организаций, каким бы видом деятельности они ни занимались.    
+    </p>
+    <p class="text-vvod"> 
+      Любую организацию можно рассматривать как совокупность взаимодействующих элементов (подразделений), каждый из которых может иметь свою структуру. Взаимосвязи между подразделениями тоже достаточно сложны.    
+    </p>
+    <p class="text-vvod"> 
+      В общем случае можно выделить три вида связей между подразделениями предприятия:
+      <ul>
+        <li>функциональные связи – каждое подразделение выполняет определенные виды работ в рамках единого бизнес-процесса;</li>
+        <li>информационные связи – подразделения обмениваются информацией (документами, факсами, письменными и устными распоряжениями и т.п.);</li>
+        <li>внешние связи – некоторые подразделения взаимодействуют с внешними системами, причем их взаимодействие также может быть как информационным, так и функциональным.</li>
+      </ul>    
+    </p>
+    <p class="text-vvod"> 
+      Можно выделить следующие стадии (этапы) жизненного цикла ИС:    
+      <ul id="final-text" >
+        <li>формирование требований (концепции) на основе анализа предметной области;</li>
+        <li>проектирование;</li>
+        <li>реализация;</li>
+        <li>внедрение (ввод системы в эксплуатацию);</li>
+        <li style="margin-bottom: 3vh !important;">эксплуатация (сопровождение проекта);</li>
+      </ul>
+    </p>
+
+  </div>
+</main>
+
+
+<!-- partial -->
+  <script src='./assets/js/jquery.js'></script>
+<script src='./assets/js/bootstrap.js'></script>
+<script  src="./assets/js/script.js"></script>
+
+</body>
+</html>

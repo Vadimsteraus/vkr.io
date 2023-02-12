@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Лекция 4</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.css'>
+<link rel='stylesheet' href='./assets/css/font-awesome.css'>
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+
+  <div class="preloader" id="page-preloader">
+    <div class="loader"></div>
+  </div>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="logo_text" href="./main_page.html"><img class="logo" src="./assets/icon/logo.svg" alt="logo"><p class="navbar-brand">Электронное пособие по проектированию и дизайну ИС</p></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    onClick="addFilters()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+      <li class="nav-item">
+        <a class="nav-link" href="./main_page.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-collapse nav-link-show collapsed"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems1"
+        aria-controls="collapseSubItems1"
+        aria-expanded="true">
+        Лекции
+        <span class="sr-only">(current)</span></a>
+        <ul class="nav-second-level collapse collapse show" id="collapseSubItems1" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./lection1.html">
+              <span class="nav-link-text">
+                Лекция 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection2.html">
+              <span class="nav-link-text">Лекция 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection3.html">
+              <span class="nav-link-text">Лекция 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="14" href="#">
+              <span class="nav-link-text">Лекция 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection5.html">
+              <span class="nav-link-text">Лекция 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection6.html">
+              <span class="nav-link-text">Лекция 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection7.html">
+              <span class="nav-link-text">Лекция 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection8.html">
+              <span class="nav-link-text">Лекция 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection9.html">
+              <span class="nav-link-text">Лекция 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection10.html">
+              <span class="nav-link-text">Лекция 9.1. Основные понятия качества ИС./</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection11.html">
+              <span class="nav-link-text">Лекция 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems2"
+          aria-controls="collapseSubItems2"
+          aria-expanded="true"
+        >Тесты</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №4</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №5</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №6</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №7</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №8</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №9</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №10</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №12</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №13</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems3"
+        aria-controls="collapseSubItems3"
+        aria-expanded="true"
+        href="#">Практические работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №1. Анализ предметной области различными
+                методами: контент-анализ, вебометрический анализ, анализ ситуаций, 
+                моделирование и др.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №2. Изучение устройств автоматизированного 
+                сбора информации</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №3. Оценка экономической эффективности 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №4. Разработка модели архитектуры 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №5. Обоснование выбора средств 
+                проектирования информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №6. Описание бизнес-процессов заданной 
+                предметной области.</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems4"
+          aria-controls="collapseSubItems4"
+          aria-expanded="false"
+        >Самостоятельные <br> работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">
+                Самостоятельная работа №1. Организация и методы сбора информации. Анализ 
+                предметной области. Основные понятия системного и 
+                структурного анализа
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №2. Основные понятия и определения ИС. Жизненный цикл 
+                информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №3. Постановка задачи обработки информации. Основные виды, 
+                алгоритмы и процедуры обработки информации, модели и 
+                методы решения задач обработки информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №4. Основные модели построения информационных систем, их 
+                структура, особенности и области применения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №5. Сервисно - ориентированные архитектуры. Анализ 
+                интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №6. Методы и средства проектирования информационных систем. Case-средства для моделирования деловых процессов 
+                (бизнес-процессов). Инструментальная среда–структура, 
+                интерфейс, элементы управления.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №7. Принципы построения модели IDEF0: контекстная 
+                диаграмма, субъект моделирования, цель и точка зрения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №8. Диаграммы IDEF0: диаграммы декомпозиции, диаграммы 
+                дерева узлов, диаграммы только для экспозиции (FEO).</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №9. Работы (Activity). Стрелки (Arrow). Туннелирование 
+                стрелок. Нумерация работ и диаграмм. Каркас диаграммы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №10. Слияние и расщепление моделей/</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №11. Особенности информационного, программного и 
+                технического обеспечения различных видов информационных 
+                систем. Экспертные системы. Системы реального времени.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №12. Оценка экономической эффективности информационной 
+                системы. Стоимостная оценка проекта. Классификация типов 
+                оценок стоимости: оценка порядка величины, концептуальная 
+                оценка, предварительная оценка, окончательная оценка, 
+                контрольная оценка.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №13. Основные процессы управления проектом. Средства 
+                управления проектами.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems5"
+        aria-controls="collapseSubItems5"
+        aria-expanded="true"
+        href="#">Справочные материлы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems5" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Глоссарий</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Итоговый тест</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content-wrapper" id="all">
+  <div class="container-fluid">
+    <div class="change_page">
+      <a href="./lection3.html" id="arrow-back"><img title="Лекция 3" src="./assets/icon/arrow-left.svg"  alt="back"></a>
+      <a id="next-button" href="./lection5.html"><img title="Лекция 5" src="./assets/icon/arrow-right.svg" alt="next"></a>
+    </div>
+
+    <h1>Иерархическая структура работ</h1>
+
+    <a href="../inner pages/assets/files_to_download/Лекция 4 ИСР.docx" class="download"> Скачать лекцию в виде файла </a>
+    <p class="text-vvod">
+      <b>Иерархическая структура работ</b> (далее ИСР) — это разбиение вашего проекта на более мелкие и измеримые части. ИСР описывает все результаты/работы, которые должны быть получены/выполнены для завершения проекта. 
+    </p>
+    <p class="text-vvod">
+      <b>Все, что не вошло в ИСР в рамки проекта не входит. </b>
+    </p>
+    <p class="text-vvod">
+      Часто ИСР представляют в виде диаграммы, где нижние уровни являются декомпозицией верхних.
+    </p>
+    <p class="text-vvod">
+      Модель ИСР может быть выполнена графически, в виде древовидной структуры или в виде словесного описания.
+    </p>
+    <h2>Алгоритм разработки</h2>
+    <p class="text-vvod">
+      <ol>
+        <li>
+          Сбор исходной информации:
+          <ul>
+            <li>требования заказчика;</li>
+            <li>набор доступных ресурсов;</li>
+            <li>конкретная проектная ситуация;</li>
+          </ul>
+        </li>
+        <li>
+          Определение степени детализации ИСР:
+          <ul>
+            <li>Работа - основной элемент управления ИСР, дискретная задача, имеющая определимые конечные результаты.</li>
+            <li>Пакет работ - сгруппированные работы.</li>
+          </ul>
+        </li>
+      </ol>
+    </p>
+    <p class="text-vvod">
+      Для определения степени детализации ИСР нужна следующая информация:
+      <ul>
+        <li>количество уровней в ИСР;</li>
+        <li>количество и средний размер пакета работ, принятых в отрасли.</li>
+      </ul>
+    </p>
+    <p class="text-vvod">ИСР не должна содержать более 3-5 уровней!</p>
+    <div class="img">
+      <img src="./assets/img/lection4/1.png" alt="illustration1" style="width: 50% !important; margin-bottom: 0vh;">
+    </div>
+    <p class="text-vvod" style="margin-bottom: 4vh; text-align: center;">
+      Рис. 1. ПРИМЕР ИСР словесного описания.
+    </p>
+    <div class="img">
+      <img src="./assets/img/lection4/2.png" alt="illustration1" style="width: 65% !important; margin-bottom: 0vh;">
+    </div>
+    <p class="text-vvod" id="final-text" style="margin-bottom: 4vh; text-align: center;">
+      Рис 2. ПРИМЕР Древовидной ИСР.
+    </p>
+  </div>
+</main>
+
+
+<!-- partial -->
+  <script src='./assets/js/jquery.js'></script>
+<script src='./assets/js/bootstrap.js'></script>
+<script  src="./assets/js/script.js"></script>
+<script src="./assets/js/addition_scroll_on_page/14.js"></script>
+
+</body>
+</html>

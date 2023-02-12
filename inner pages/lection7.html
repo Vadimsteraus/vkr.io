@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Лекция 7.1</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.css'>
+<link rel='stylesheet' href='./assets/css/font-awesome.css'>
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+
+  <div class="preloader" id="page-preloader">
+    <div class="loader"></div>
+  </div>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="logo_text" href="./main_page.html"><img class="logo" src="./assets/icon/logo.svg" alt="logo"><p class="navbar-brand">Электронное пособие по проектированию и дизайну ИС</p></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    onClick="addFilters()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+      <li class="nav-item">
+        <a class="nav-link" href="./main_page.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-collapse nav-link-show collapsed"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems1"
+        aria-controls="collapseSubItems1"
+        aria-expanded="true">
+        Лекции
+        <span class="sr-only">(current)</span></a>
+        <ul class="nav-second-level collapse collapse show" id="collapseSubItems1" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./lection1.html">
+              <span class="nav-link-text">
+                Лекция 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection2.html">
+              <span class="nav-link-text">Лекция 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection3.html">
+              <span class="nav-link-text">Лекция 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection4.html">
+              <span class="nav-link-text">Лекция 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection5.html">
+              <span class="nav-link-text">Лекция 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="16" href="./lection6.html">
+              <span class="nav-link-text">Лекция 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" id="17">
+              <span class="nav-link-text">Лекция 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection8.html">
+              <span class="nav-link-text">Лекция 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection9.html">
+              <span class="nav-link-text">Лекция 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection10.html">
+              <span class="nav-link-text">Лекция 9.1. Основные понятия качества ИС./</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection11.html">
+              <span class="nav-link-text">Лекция 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems2"
+          aria-controls="collapseSubItems2"
+          aria-expanded="true"
+        >Тесты</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №4</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №5</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №6</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №7</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №8</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №9</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №10</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №12</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №13</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems3"
+        aria-controls="collapseSubItems3"
+        aria-expanded="true"
+        href="#">Практические работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №1. Анализ предметной области различными
+                методами: контент-анализ, вебометрический анализ, анализ ситуаций, 
+                моделирование и др.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №2. Изучение устройств автоматизированного 
+                сбора информации</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №3. Оценка экономической эффективности 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №4. Разработка модели архитектуры 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №5. Обоснование выбора средств 
+                проектирования информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №6. Описание бизнес-процессов заданной 
+                предметной области.</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems4"
+          aria-controls="collapseSubItems4"
+          aria-expanded="false"
+        >Самостоятельные <br> работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">
+                Самостоятельная работа №1. Организация и методы сбора информации. Анализ 
+                предметной области. Основные понятия системного и 
+                структурного анализа
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №2. Основные понятия и определения ИС. Жизненный цикл 
+                информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №3. Постановка задачи обработки информации. Основные виды, 
+                алгоритмы и процедуры обработки информации, модели и 
+                методы решения задач обработки информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №4. Основные модели построения информационных систем, их 
+                структура, особенности и области применения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №5. Сервисно - ориентированные архитектуры. Анализ 
+                интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №6. Методы и средства проектирования информационных систем. Case-средства для моделирования деловых процессов 
+                (бизнес-процессов). Инструментальная среда–структура, 
+                интерфейс, элементы управления.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №7. Принципы построения модели IDEF0: контекстная 
+                диаграмма, субъект моделирования, цель и точка зрения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №8. Диаграммы IDEF0: диаграммы декомпозиции, диаграммы 
+                дерева узлов, диаграммы только для экспозиции (FEO).</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №9. Работы (Activity). Стрелки (Arrow). Туннелирование 
+                стрелок. Нумерация работ и диаграмм. Каркас диаграммы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №10. Слияние и расщепление моделей/</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №11. Особенности информационного, программного и 
+                технического обеспечения различных видов информационных 
+                систем. Экспертные системы. Системы реального времени.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №12. Оценка экономической эффективности информационной 
+                системы. Стоимостная оценка проекта. Классификация типов 
+                оценок стоимости: оценка порядка величины, концептуальная 
+                оценка, предварительная оценка, окончательная оценка, 
+                контрольная оценка.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №13. Основные процессы управления проектом. Средства 
+                управления проектами.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems5"
+        aria-controls="collapseSubItems5"
+        aria-expanded="true"
+        href="#">Справочные материлы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems5" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Глоссарий</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Итоговый тест</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content-wrapper" id="all">
+  <div class="container-fluid">
+    <div class="change_page">
+      <a href="./lection6.html" id="arrow-back"><img title="Лекция 6" src="./assets/icon/arrow-left.svg"  alt="back"></a>
+      <a id="next-button" href="./lection8.html"><img title="Лекция 7.2" src="./assets/icon/arrow-right.svg" alt="next"></a>
+    </div>
+
+    <h1>Сервисно - ориентированные архитектуры</h1>
+
+    <a href="../inner pages/assets/files_to_download//Лекция 7.1.pptx" class="download"> Скачать лекцию в виде файла </a>
+    <h2>Архитектура информационной системы</h2>
+    <p class="text-vvod">
+      <b>Архитектурой информационной системы</b> называется концепция, согласно которой взаимодействуют компоненты информационной системы.
+    </p>
+    <p class="text-vvod">
+      <b>Интерфе́йс</b> (от англ. interface) — общая граница между двумя функциональными объектами, требования к которой определяются стандартом и совокупностью средств, методов и правил взаимодействия (управления, контроля и т.д.) между элементами системы.
+    </p>
+    <p class="text-vvod">
+      Примеры:
+      <ul>
+        <li>
+          элементы электронного аппарата (телевизора, автомагнитолы, часов и т. п.), такие как дисплей, набор кнопок и переключателей для настройки, плюс правила управления ими, относятся к человеко-машинному интерфейсу;
+        </li>
+        <li>
+          клавиатура, мышь и пр. устройства ввода — элементы интерфейса «человек—компьютер»;
+        </li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      Примеры:
+    </p>
+    <div class="img">
+      <img style="width: 40% !important;" src="./assets/img/lection7/1.png" alt="illustration1">
+      <img style="width: 40% !important;" src="./assets/img/lection7/2.png" alt="illustration2">
+    </div>
+    <div class="img">
+      <img style="width: 40% !important;" src="./assets/img/lection7/3.png" alt="illustration3">
+      <img style="width: 40% !important;" src="./assets/img/lection7/4.png" alt="illustration4">
+    </div>
+    <h2>Элементы информационной системы</h2>
+    <p class="text-vvod">
+      Любая информационная система (ИС) включает в себя три компонента: 
+      <ul>
+        <li>Управление данными;</li>
+        <li>Бизнес-логику; </li>
+        <li>Пользовательский интерфейс. </li>
+      </ul>
+    </p>
+    <h2>Элементы информационной системы</h2>
+    <p class="text-vvod">
+      <b>Данные хранятся в базах данных</b>, а управление ими осуществляется с помощью системы управления базами данных (СУБД).
+    </p>
+    <p class="text-vvod">
+      <b>Бизнес-логика определяет правила, по которым обрабатываются данные. </b> Она реализуется набором процедур, написанных на различных языках программирования. 
+    </p>
+    <h2>Сервисно-ориентированная архитектура <b>SOA, service-oriented architecture) </b></h2>
+    <p class="text-vvod">
+      Под сервис-ориентированной архитектурой понимается модульный подход к проектированию прикладных информационных систем, который руководствуется следующими принципами:
+      <ul>
+        <li>явное отделение бизнес-логики прикладной системы от логики презентации информации;</li>
+        <li>реализация бизнес-логики прикладной системы в виде некоторого количества программных модулей (сервисов), которые доступны извне (пользователям и другим модулям), чаще всего в режиме "запрос-ответ", через четко определенные формальные интерфейсы доступа;</li>
+        <li>при этом "потребитель услуги", который может быть прикладной системой или другим сервисом, имеет возможность вызвать сервис через интерфейсы, используя соответствующие коммуникационные механизмы.</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      Базовыми понятиями в такой архитектуре являются "информационная услуга“ (сервис) и "композитное приложение".
+    </p>
+    <p class="text-vvod">
+      Принципы SOA:
+      <ul>
+        <li>архитектура, как таковая, не привязана к какой-то определенной технологии;</li>
+        <li>независимость организации системы от используемой вычислительной платформы (платформ);</li>
+        <li>независимость организации системы от применяемых языков программирования;</li>
+        <li>использование сервисов, независимых от конкретных приложений, с единообразными интерфейсами доступа к ним;</li>
+        <li>организация сервисов как слабосвязанных компонентов для построения систем;</li>
+      </ul>
+    </p>
+    <h2>Информационная услуга (сервис)</h2>
+    <p class="text-vvod">
+      <b>Информационная услуга (сервис)</b> - это атомарная прикладная функция автоматизированной системы, которая пригодна для использования при разработке приложений, реализующих прикладную логику автоматизируемых процессов как в самой системе, так и для использования в приложениях других автоматизированных систем.
+    </p>
+    <p class="text-vvod">
+      Сервис обычно характеризуется следующими свойствами:
+      <ul>
+        <li>возможность многократного применения;</li>
+        <li>услуга может быть определена одним или несколькими технологически независимыми интерфейсами;</li>
+        <li>выделенные услуги слабо связаны между собой, и каждая из них может быть вызвана посредством коммуникационных протоколов, обеспечивающих возможность взаимодействия услуг между собой.</li>
+      </ul>
+    </p>
+    <h2>Композитное (составное) приложение</h2>
+    <p class="text-vvod">
+      <b>Композитное (составное) приложение</b> - программное решение для конкретной прикладной проблемы, которое связывает прикладную логику процесса с источниками данных и информационных услуг, хранящихся на <b>разнородном</b> множестве базовых информационных систем. 
+    </p>
+    <p class="text-vvod">
+      Обычно композитные приложения ассоциированы с процессами деятельности и могут объединять различные этапы процессов, представляя их пользователю через единый интерфейс.
+    </p>
+    <h2>SOA позволяет:</h2>
+    <p class="text-vvod">
+      <ul>
+        <li>создать систему корпоративных композитных приложений, основанных на системе корпоративных Web-сервисов;</li>
+        <li>организовать интеграцию приложений, бизнес-процессов, с автоматизацией бизнес-процессов;</li>
+        <li>использовать различные транспортные протоколы и стандарты форматирования сообщений, средства обеспечения безопасности, надежной и своевременной доставки сообщений;</li>
+        <li>существенно повысить скорость разработки прикладных приложений и снизить затраты на эти цели.</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      Архитектура не привязана к какой-то определённой технологии. Она может быть реализована с использованием широкого спектра технологий, включая такие технологии как веб-сервисы REST и SOAP. 
+    </p>
+    <h2>Веб-сервис</h2>
+    <p class="text-vvod">
+      <b>Веб-сервис</b> – идентифицируемая веб-адресом программная система со стандартизированными интерфейсами. Веб-службы могут взаимодействовать между собой и со сторонними приложениями посредством сообщений, основанных на определенных протоколах. 
+    </p>
+    <p class="text-vvod">
+      Интерфейс сервиса описан в Web Service Description Language (WSDL). Веб-сервис – единица модульности при создании СОА приложения.
+    </p>
+    <p class="text-vvod">
+      Характеристики Веб-сервисов:
+      <ul>
+        <li>функциональная совместимость;</li>
+        <li>расширяемость;</li>
+        <li>возможность машинной обработки описания.</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      Веб-сервисы взаимодействуют между собой через протокол SOAP в соответствии с WSDL.
+    </p>
+    <h2>SOAP</h2>
+    <p class="text-vvod">
+      <b>SOAP (Simple Object Access Protocol – простой протокол доступа к объектам)</b>  - протокол обмена структурированными сообщениями в распределенной вычислительной среде; первоначально предназначался для удаленного вызова процедур (RPC), сейчас используется так же для обмена произвольными сообщениями в формате XML.
+    </p>
+    <p class="text-vvod">
+      SOAP может использоваться с любым протоколом прикладного уровня: SMTP, FTP, HTTP, HTTPS и др.
+    </p>
+    <p class="text-vvod">
+      Как правило, применяется в бизнес-приложениях и на основе ранее существовавших систем. 
+    </p>
+    <p class="text-vvod">
+      Ориентирован на написание методов и ОО-подход. 
+    </p>
+    <h2>REST</h2>
+    <p class="text-vvod">
+      <b>REST (Representational State Transfer)</b> — «передача состояния представления») представляет собой согласованный набор ограничений, учитываемых при проектировании распределённой гипермедиа-системы. 
+    </p>
+    <p class="text-vvod">
+      В определённых случаях (интернет-магазины, поисковые системы, прочие системы, основанные на данных) это приводит к повышению производительности и упрощению архитектуры. 
+    </p>
+    <p class="text-vvod">
+       В широком смысле компоненты в REST взаимодействуют наподобие взаимодействия клиентов и серверов во Всемирной паутине. REST является альтернативой RPC. В сети Интернет вызов удалённой процедуры может представлять собой обычный HTTP-запрос (обычно «GET» или «POST»; такой запрос называют «REST-запрос»), а необходимые данные передаются в качестве параметров запроса.
+    </p>
+    <p class="text-vvod">
+      Для веб-служб, построенных с учётом REST (то есть не нарушающих накладываемых им ограничений), применяют термин <b>«RESTful»</b>.
+    </p>
+    <h2>Требования к архитектуре REST</h2>
+    <p class="text-vvod" style="text-indent: 0px;">
+      <b>1.Модель клиент-сервер</b><br>
+      <b>2.Отсутствие состояния</b> - В период между запросами клиента никакая информация о состоянии клиента на сервере не хранится. <br>
+      <b>3.Кэширование (кэш)</b> – некоторой промежуточный буфер, в котором хранятся данные. Клиенты, а также промежуточные узлы, могут выполнять кэширование ответов сервера. Ответы сервера, в свою очередь, должны иметь явное или неявное обозначение как кэшируемые или. <br>
+    </p>
+    <p class="text-vvod">
+    </p>
+    <p class="text-vvod">
+      Информация о состоянии сессии может быть передана сервером какому-либо другому сервису (например, в службу базы данных) для поддержания устойчивого состояния, например, на период установления аутентификации. Клиент инициирует отправку запросов, когда он готов (возникает необходимость) перейти в новое состояние.
+    </p>
+    <p class="text-vvod">
+      Во время обработки клиентских запросов считается, что клиент находится в переходном состоянии, между обработками – в состоянии покоя. Каждое отдельное состояние приложения представлено связями, которые могут быть задействованы при следующем обращении клиента.
+    </p>
+    <p class="text-vvod" style="text-indent: 0px;">
+      <b>4. Единообразие интерфейса</b>
+    </p>
+    <p class="text-vvod">
+      Унифицированные интерфейсы позволяют каждому из сервисов развиваться независимо. Требования к унифицированным интерфейсам:
+      <ul>
+        <b><li>Идентификация ресурсов</li></b>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      <b>Ресурс</b> – многократно используемый и относительно стабильный объект, который может распределяться внутри системы.
+    </p>
+    <p class="text-vvod">
+      Все ресурсы идентифицируются в запросах, например, с использованием URI в интернет-системах. 
+    </p>
+    <p class="text-vvod">
+      <ul>
+        <b><li>Манипуляция ресурсами через представление</li></b>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      <b>Представление ресурса</b> – документ, отражающий текущее или требуемое состояние ресурса.
+    </p>
+    <p class="text-vvod">
+      <ul>
+        <b>
+          <li>«Самоописываемые» сообщения</li>
+        </b>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      Каждое сообщение содержит достаточно информации, чтобы понять, каким образом его обрабатывать.
+    </p>
+    <p class="text-vvod">
+      <ul>
+        <b>
+          <li>Гипермедиа как средство изменения состояния приложения </li>
+        </b>
+      </ul>
+    </p>
+    <p class="text-vvod">Клиенты изменяют состояние системы только через действия, которые динамически определены в гипермедиа на сервере (к примеру, гиперссылки в гипертексте). Исключая простые точки входа в приложение, клиент не может предположить, что доступна какая-то операция над каким-то ресурсом, если не получил информацию об этом в предыдущих запросах к серверу. </p>
+    <p class="text-vvod" style="text-indent: 0px;">
+      5. Слои
+    </p>
+    <p class="text-vvod">
+      Клиент обычно не способен точно определить, взаимодействует он напрямую с сервером или же с промежуточным узлом, в связи с иерархической структурой сетей (подразумевая, что такая структура образует слои).
+    </p>
+    <p class="text-vvod">
+      6. Код по требованию (необязательное ограничение)
+    </p>
+    <p class="text-vvod">
+      REST может позволить расширить функциональность клиента за счёт загрузки кода с сервера в виде апплетов или сценариев.
+    </p>
+    <p class="text-vvod">
+      <b>Апплет</b> - это несамостоятельный компонент программного обеспечения, работающий в контексте другого, полновесного приложения, предназначенный для одной узкой задачи и не имеющий ценности в отрыве от базового приложения.
+    </p>
+    <p class="text-vvod">
+      <b>Сценарий</b> — это программа, имеющая дело с готовым
+    </p>
+    <h2>Учет интересов клиентов и выбор оптимального решения</h2>
+    <div class="text-vvod" style="text-align: center;">
+      <table cellspacing="7" cellpadding="8" style="display: inline-block;">
+        <tr>       
+            <th><b>Критерий</b></th>
+            <th><b>REST</b></th>
+            <th><b>SOAP</b></th>
+        </tr>
+        <tr>
+          <th>Поддерживаемые форматы</th>
+          <th>text, JSON, XML</th>
+          <th>только XML</th>
+        </tr>
+        <tr>
+          <th>Протоколы</th>
+          <th>Только по HTTP(S)</th>
+          <th>Различные протоколы</th>
+        </tr>
+        <tr>
+          <th>Работа с ресурсами и операциями</th>
+          <th>Работает с ресурсами</th>
+          <th>Работает с операциями</th>
+        </tr>
+        <tr>
+          <th>Возможность кэширования</th>
+          <th>есть</th>
+          <th>Нет</th>
+        </tr>
+        <tr>
+          <th>Поддержка протокола SSL и WS-security</th>
+          <th>протокола SSL и WS-security</th>
+          <th>протокола SSL</th>
+        </tr>
+      </table>
+    </div>
+    <h2>SOAP и REST</h2>
+    <div class="text-vvod" style="text-align: center;">
+      <table cellspacing="7" cellpadding="8" style="display: inline-block;">
+        <tr>
+          <th><b>Критерий</b></th>
+          <th><b>SOAP</b></th>
+          <th><b>RESTful</b></th>
+        </tr>
+        <tr>
+          <th>Спецификация Java</th>
+          <th>JAX-WS</th>
+          <th>JAX-RS</th>
+        </tr>
+        <tr>
+          <th>Назначение</th>
+          <th>Инкапсулирует бизнес-логику</th>
+          <th>Доступ к ресурсам/данным</th>
+        </tr>
+        <tr>
+          <th>Методология разработки</th>
+          <th>Объектно-ориентированная (сервисно-)</th>
+          <th>Ресурсно-ориентированная</th>
+        </tr>
+        <tr>
+          <th>Независимость от языка</th>
+          <th>Да</th>
+          <th>Да</th>
+        </tr>
+        <tr>
+          <th>Независимость от платформы</th>
+          <th>Да</th>
+          <th>Да</th>
+        </tr>
+        <tr>
+          <th>Независимость от транспорта</th>
+          <th>Да</th>
+          <th>Нет, только HTTP</th>
+        </tr>
+        <tr>
+          <th>Независимость от транспорта</th>
+          <th>Да</th>
+          <th>Нет, только HTTP</th>
+        </tr>
+        <tr>
+          <th>Стандартизирован</th>
+          <th>Да</th>
+          <th>Нет</th>
+        </tr>
+        <tr>
+          <th>Безопасность</th>
+          <th>SSL, WSL-Security</th>
+          <th>SSL</th>
+        </tr>
+        <tr>
+          <th>Транзакции</th>
+          <th>WS-AtomicTransaction</th>
+          <th>Нет</th>
+        </tr>
+        <tr>
+          <th>Надежная доставка</th>
+          <th>WS-ReliableMessaging</th>
+          <th>Контроль со стороны приложения</th>
+        </tr>
+        <tr>
+          <th>Производительность</th>
+          <th>Ниже</th>
+          <th>Выше</th>
+        </tr>
+        <tr>
+          <th>Кэширование</th>
+          <th>Нет</th>
+          <th>Есть для метода GET</th>
+        </tr>
+        <tr>
+          <th>Размер сообщений</th>
+          <th>Большой, служебные данные</th>
+          <th>Небольшой</th>
+        </tr>
+        <tr>
+          <th>Протокол сообщений</th>
+          <th>XML</th>
+          <th>XML, JSON, любой тип MIME</th>
+        </tr>
+        <tr>
+          <th>Описание сервисов</th>
+          <th>WSDL</th>
+          <th>Формального нет</th>
+        </tr>
+        <tr>
+          <th>Инструменты разработки</th>
+          <th>Требуются</th>
+          <th>Можно без них</th>
+        </tr>
+      </table>
+    </div>
+    <p class="text-vvod" id="final-text">
+      <b>Выводы:</b> REST против SOAP можно перефразировать как «Простота против Стандарта». В случае REST (простота) у вас будет скорость, расширяемость и поддержка многих форматов. В случае с SOAP у вас будет больше возможностей по безопасности (WS-security) и транзакционная безопасность (ACID).
+    </p>
+  </div>
+</main>
+
+
+<!-- partial -->
+  <script src='./assets/js/jquery.js'></script>
+<script src='./assets/js/bootstrap.js'></script>
+<script  src="./assets/js/script.js"></script>
+<script src="./assets/js/addition_scroll_on_page/17.js"></script>
+
+</body>
+</html>

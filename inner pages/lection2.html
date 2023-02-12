@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Лекция 2</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.css'>
+<link rel='stylesheet' href='./assets/css/font-awesome.css'>
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+
+  <div class="preloader" id="page-preloader">
+    <div class="loader"></div>
+  </div>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="logo_text" href="./main_page.html"><img class="logo" src="./assets/icon/logo.svg" alt="logo"><p class="navbar-brand">Электронное пособие по проектированию и дизайну ИС</p></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    onClick="addFilters()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+      <li class="nav-item">
+        <a class="nav-link" href="./main_page.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-collapse nav-link-show collapsed"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems1"
+        aria-controls="collapseSubItems1"
+        aria-expanded="true">
+        Лекции
+        <span class="sr-only">(current)</span></a>
+        <ul class="nav-second-level collapse collapse show" id="collapseSubItems1" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./lection1.html">
+              <span class="nav-link-text">
+                Лекция 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="12" href="#">
+              <span class="nav-link-text">Лекция 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection3.html">
+              <span class="nav-link-text">Лекция 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection4.html">
+              <span class="nav-link-text">Лекция 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection5.html">
+              <span class="nav-link-text">Лекция 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection6.html">
+              <span class="nav-link-text">Лекция 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection7.html">
+              <span class="nav-link-text">Лекция 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection8.html">
+              <span class="nav-link-text">Лекция 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection9.html">
+              <span class="nav-link-text">Лекция 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection10.html">
+              <span class="nav-link-text">Лекция 9.1. Основные понятия качества ИС./</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection11.html">
+              <span class="nav-link-text">Лекция 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems2"
+          aria-controls="collapseSubItems2"
+          aria-expanded="true"
+        >Тесты</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №4</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №5</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №6</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №7</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №8</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №9</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №10</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №12</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №13</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems3"
+        aria-controls="collapseSubItems3"
+        aria-expanded="true"
+        href="#">Практические работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №1. Анализ предметной области различными
+                методами: контент-анализ, вебометрический анализ, анализ ситуаций, 
+                моделирование и др.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №2. Изучение устройств автоматизированного 
+                сбора информации</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №3. Оценка экономической эффективности 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №4. Разработка модели архитектуры 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №5. Обоснование выбора средств 
+                проектирования информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №6. Описание бизнес-процессов заданной 
+                предметной области.</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems4"
+          aria-controls="collapseSubItems4"
+          aria-expanded="false"
+        >Самостоятельные <br> работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">
+                Самостоятельная работа №1. Организация и методы сбора информации. Анализ 
+                предметной области. Основные понятия системного и 
+                структурного анализа
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №2. Основные понятия и определения ИС. Жизненный цикл 
+                информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №3. Постановка задачи обработки информации. Основные виды, 
+                алгоритмы и процедуры обработки информации, модели и 
+                методы решения задач обработки информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №4. Основные модели построения информационных систем, их 
+                структура, особенности и области применения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №5. Сервисно - ориентированные архитектуры. Анализ 
+                интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №6. Методы и средства проектирования информационных систем. Case-средства для моделирования деловых процессов 
+                (бизнес-процессов). Инструментальная среда–структура, 
+                интерфейс, элементы управления.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №7. Принципы построения модели IDEF0: контекстная 
+                диаграмма, субъект моделирования, цель и точка зрения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №8. Диаграммы IDEF0: диаграммы декомпозиции, диаграммы 
+                дерева узлов, диаграммы только для экспозиции (FEO).</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №9. Работы (Activity). Стрелки (Arrow). Туннелирование 
+                стрелок. Нумерация работ и диаграмм. Каркас диаграммы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №10. Слияние и расщепление моделей/</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №11. Особенности информационного, программного и 
+                технического обеспечения различных видов информационных 
+                систем. Экспертные системы. Системы реального времени.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №12. Оценка экономической эффективности информационной 
+                системы. Стоимостная оценка проекта. Классификация типов 
+                оценок стоимости: оценка порядка величины, концептуальная 
+                оценка, предварительная оценка, окончательная оценка, 
+                контрольная оценка.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №13. Основные процессы управления проектом. Средства 
+                управления проектами.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems5"
+        aria-controls="collapseSubItems5"
+        aria-expanded="true"
+        href="#">Справочные материлы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems5" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Глоссарий</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Итоговый тест</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content-wrapper" id="all">
+  <div class="container-fluid">
+    <div class="change_page">
+      <a href="./lection1.html" id="arrow-back"><img title="Лекция 1" src="./assets/icon/arrow-left.svg"  alt="back"></a>
+      <a id="next-button" href="./lection3.html"><img title="Ллекция 3" src="./assets/icon/arrow-right.svg" alt="next"></a>
+    </div>
+
+    <h1>Модели жизненных циклов интересных систем</h1>
+
+    <a href="../inner pages/assets/files_to_download/Лекция 2 модели ЖЦ ИС.pptx" class="download"> Скачать лекцию в виде файла </a>
+    <p class="text-vvod"> 
+      Информационная	система (ИС) – основной компонент автоматизированных систем управления.
+
+    </p>
+    <p class="text-vvod"> 
+      Проектирование информационных систем (ИС) – процесс создания и сопровождения систем в виде жизненного цикла (ЖЦ) информационной системы.
+    </p>    
+    <p class="text-vvod"> 
+      Жизненный цикл ИС – некоторая последовательность стадий и выполняемых на них процессов.
+    </p>    
+    <p class="text-vvod"> 
+      Для каждого этапа ЖЦ определяются:
+    </p>    
+    <p class="text-vvod"> 
+      <ul>
+        <li>состав и последовательность выполняемых работ</li>
+        <li>получаемые результаты</li>
+        <li>методы и средства, необходимые для выполнения работ</li>
+        <li>роли и ответственность участников и т.д</li>
+      </ul>
+    </p>
+    <p class="text-vvod"> 
+      Такое <b>формальное описание</b> ЖЦ ИС позволяет спланировать и организовать процесс коллективной разработки и обеспечить управление этим процессом.
+    </p>
+    <p class="text-vvod"> 
+      Жизненный цикл ИС можно представить как ряд событий, происходящих с системой в процессе ее создания и использования.
+    </p>
+
+    <p class="text-vvod"> 
+      Модель жизненного цикла отражает различные состояния системы, начиная с момента возникновения необходимости в данной ИС и заканчивая моментом ее полного выхода из употребления.          
+    </p>
+    <p class="text-vvod">
+      <b>Модель жизненного цикла</b> – структура, содержащая процессы, действия и задачи, которые осуществляются в ходе
+      <ul>
+        <li>разработки</li>
+        <li>функционирования</li>
+        <li> сопровождения программного продукта в течение всей жизни системы, от определения требований до завершения ее использования.</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      В настоящее время известны и используются три модели жизненного цикла:
+      <ul>
+        <li>каскадная модель;</li>
+        <li>поэтапная модель с промежуточным контролем;</li>
+        <li>спиральная модель;</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      <b>Каскадная модель</b> (рис. 1) – предусматривает последовательное выполнение всех этапов проекта в строго фиксированном порядке. Переход на следующий этап означает полное завершение работ на предыдущем этапе.
+    </p>
+    <div class="img">
+      <img src="./assets/img/lection2/1.png" alt="illustration1">
+    </div>
+    <p class="text-vvod" style="margin-bottom: 4vh; text-align: center;">
+      Рис. 1.	Каскадная модель ЖЦ ИС
+    </p>
+    <p class="text-vvod">
+      Каскадная модель предполагает разработку законченных продуктов на каждом этапе:
+      <ul>
+        <li>технического задания</li>
+        <li>технического проекта</li>
+        <li>программного продукта</li>
+        <li>пользовательской документации</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      <b>Преимущества применения каскадного подхода:</b>
+      <ul>
+        <li>на каждом этапе формируется законченный набор проектной документации, отвечающий критериям полноты и согласованности;</li>
+        <li>выполняемые в логической последовательности этапы работ позволяют планировать сроки завершения всех работ и соответствующие затраты;</li>
+        <li>Каскадный  подход  хорошо  зарекомендовал  себя при построении относительно простых ИС, когда в самом начале разработки можно достаточно точно и полно сформулировать все требования к системе</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      <b>Основной недостаток</b> каскадного подхода – реальный процесс создания системы никогда полностью не укладывается в такую жесткую схему, постоянно возникает потребность в возврате к предыдущим этапам и уточнении или пересмотре ранее принятых решений. В результате реальный процесс создания ИС оказывается соответствующим поэтапной модели с промежуточным контролем.
+    </p>
+    <p class="text-vvod">
+      <b>Поэтапная модель с промежуточным контролем </b> (рис.2) – разработка ИС ведется итерациями с циклами обратной связи между этапами.
+    </p>
+    <p class="text-vvod">
+      Межэтапные корректировки позволяют учитывать реально существующее взаимовлияние результатов разработки на различных этапах.
+    </p>
+    <p class="text-vvod">
+      Время жизни каждого из этапов растягивается на весь период разработки.
+    </p>
+    <div class="img">
+      <img src="./assets/img/lection2/2.png" alt="illustration1">
+    </div>
+    <p class="text-vvod" style="margin-bottom: 4vh; text-align: center;">
+      Рис. 2.	Поэтапная модель с промежуточным контролем
+    </p>
+    <p class="text-vvod">
+      <b>Спиральная модель</b> (рис. 3) – на каждом витке спирали:
+      <ul>
+        <li>выполняется создание очередной версии продукта</li>
+        <li>уточняются требования проекта</li>
+        <li>определяется его качество</li>
+        <li>планируются работы следующего витка</li>
+      </ul>
+    </p>
+    <div class="img">
+      <img src="./assets/img/lection2/3.png" alt="illustration1">
+    </div>
+    <p class="text-vvod" style="margin-bottom: 4vh; text-align: center;">
+      Рис. 3.	Спиральная модель ЖЦ ИС
+    </p>
+    <p class="text-vvod">
+      Спиральная модель ЖЦ была предложена для преодоления перечисленных проблем.    
+    </p>
+    <p class="text-vvod">
+      На этапах анализа и проектирования реализуемость технических решений и степень удовлетворения потребностей заказчика проверяется путем создания прототипов.
+    </p>
+    <p class="text-vvod">
+      Каждый виток спирали соответствует созданию работоспособного фрагмента или версии системы.
+    </p>
+    <p class="text-vvod">
+      Итеративная разработка объективно отражает существующий спиральный цикл создания сложных систем:
+      <ul>
+        <li>позволяет переходить на следующий этап, не дожидаясь полного завершения работы на текущем этапе.</li>
+        <li>Кроме того, решается главная задача – как можно быстрее показать пользователям системы работоспособный продукт, тем самым активизируя процесс уточнения и дополнения требований.</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      <b>Основная проблема спирального цикла</b> – определение момента перехода на следующий этап. Для решения этой проблемы – вводятся временные ограничения на каждый из этапов жизненного цикла, и переход осуществляется в соответствии с планом, даже если не вся запланированная работа закончена. Планирование производится на основе статистических данных, полученных в предыдущих проектах, и личного опыта разработчиков.
+    </p>
+    <p class="text-vvod">
+      Каждая из стадий создания системы предусматривает выполнение определенного объема работ, которые представляются в виде процессов ЖЦ.
+    </p>
+    <p class="text-vvod">
+      <b>Процесс</b> – совокупность взаимосвязанных действий, преобразующих входные данные в выходные.
+    </p>
+    <p class="text-vvod">
+      Описание каждого процесса включает в себя перечень:
+      <ul>
+        <li>решаемых задач</li>
+        <li>исходных данных</li>
+        <li>результатов</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      На практике наибольшее распространение получили две основные моделижизненного цикла:
+      <ul>
+        <li>каскадная модель (характерна для периода 1970-1985 гг.);</li>
+        <li>спиральная модель (характерна для периода после 1986 г.)</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      В		ранних проектах	достаточно	простых 	ИС каждое приложение представляло собой единый, функционально и информационно независимый блок
+    </p>
+    <p class="text-vvod">
+      Для  разработки  такого  типа  приложений эффективным оказался каскадный способ. Каждый   этап   завершался   после   полного выполнения  и документального  оформления всех предусмотренных работ.
+    </p>
+    <p class="text-vvod">
+      Если требования к ИС меняются в ходе реализации проекта,   а   качество   документов   оказывается невысоким     (требования     неполны     и/или противоречивы),     то     в     действительности использование  каскадной  модели  создает  лишь иллюзию  определенности  и  на  деле  увеличивает риски, уменьшая лишь ответственность участников проекта.
+    </p>
+    <p class="text-vvod">
+      При  формальном  подходе  менеджер  проекта реализует   только   те   требования,   которые содержатся   в   спецификации,   опирается   на документ,   а   не   на   реальные   потребности пользователя.
+    </p>
+    <p class="text-vvod">
+      Существует	целый ряд		стандартов, регламентирующих ЖЦ	программного обеспечения	ИС, а в некоторых случаях и процессы разработки.      
+    </p>
+    <p class="text-vvod">
+      Значительный вклад в теорию проектирования и разработки информационных систем внесла компания  IBM,  предложив  еще  в  середине 1970-х   годов   методологию   BSP   (Business System	Planning	–	методология организационного планирования).
+    </p>
+    <p class="text-vvod">
+      Наиболее известные стандарты:
+      <ul>
+        <li>ГОСТ 34.601-90</li>
+        <li>ISO/IEC 12207:1995</li>
+        <li>Custom Development Method (CDM) по разработке прикладных информационных систем (методика Oracle)</li>
+        <li>Rational Unified Process (RUP)</li>
+        <li>Microsoft Solution Framework (MSF)</li>
+        <li>Extreme Programming (XP)</li>
+        <li>ГОСТ 34.601-90 – распространяется на автоматизированные системы и устанавливает стадии и этапы их создания. Кроме того, в стандарте содержится описание содержания работ на каждом этапе. Стадии и этапы работы, закрепленные в стандарте, в большей степени соответствуют каскадной модели жизненного цикла.</li>
+        <li>ISO/IEC 12207:1995 – стандарт на процессы и организацию жизненного цикла. Распространяется на все виды заказного программного обеспечения. Стандарт не содержит описания фаз, стадий и этапов.</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      В соответствии с базовым международным стандартом ISO/IEC 12207 все процессы ЖЦ программного обеспечения ИС делятся на три группы:
+      <ul>
+        <li>
+          <b>Основные процессы:</b>
+          <ul>
+            <li>приобретение</li>
+            <li>поставка</li>
+            <li>разработка</li>
+            <li>эксплуатация</li>
+            <li>сопровождение</li>
+          </ul>
+        </li>
+        <li>
+          <b>Вспомогательные процессы: </b>
+          <ul>
+            <li>документирование</li>
+            <li>управление конфигурацией</li>
+            <li>обеспечение качества</li>
+            <li>разрешение проблем</li>
+            <li>аудит</li>
+            <li>аттестация</li>
+          </ul>
+        </li>
+        <li>
+          <b>Организационные процессы: </b>
+          <ul>
+            <li>создание инфраструктуры</li>
+            <li>управление</li>
+            <li>обучение</li>
+            <li>усовершенствование</li>
+          </ul>
+        </li>
+      </ul>
+    </p>
+    <p class="text-vvod" id="final-text">
+      <b>Extreme Programming (XP)</b> – экстремальное	программирование (самая новая среди рассматриваемых методологий) сформировалось в 1996 году. В основе методологии командная работа, эффективная коммуникация между заказчиком и исполнителем в течение всего проекта по разработке ИС, а разработка ведется с использованием последовательно дорабатываемых прототипов.
+    </p>
+  </div>
+</main>
+
+
+<!-- partial -->
+  <script src='./assets/js/jquery.js'></script>
+<script src='./assets/js/bootstrap.js'></script>
+<script  src="./assets/js/script.js"></script>
+<script src="./assets/js/addition_scroll_on_page/12.js"></script>
+
+</body>
+</html>

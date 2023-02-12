@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Лекция 3</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.css'>
+<link rel='stylesheet' href='./assets/css/font-awesome.css'>
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+
+  <div class="preloader" id="page-preloader">
+    <div class="loader"></div>
+  </div>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="logo_text" href="./main_page.html"><img class="logo" src="./assets/icon/logo.svg" alt="logo"><p class="navbar-brand">Электронное пособие по проектированию и дизайну ИС</p></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    onClick="addFilters()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+      <li class="nav-item">
+        <a class="nav-link" href="./main_page.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-collapse nav-link-show collapsed"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems1"
+        aria-controls="collapseSubItems1"
+        aria-expanded="true">
+        Лекции
+        <span class="sr-only">(current)</span></a>
+        <ul class="nav-second-level collapse collapse show" id="collapseSubItems1" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./lection1.html">
+              <span class="nav-link-text">
+                Лекция 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection2.html">
+              <span class="nav-link-text">Лекция 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="13" href="#">
+              <span class="nav-link-text">Лекция 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection4.html">
+              <span class="nav-link-text">Лекция 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection5.html">
+              <span class="nav-link-text">Лекция 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection6.html">
+              <span class="nav-link-text">Лекция 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection7.html">
+              <span class="nav-link-text">Лекция 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection8.html">
+              <span class="nav-link-text">Лекция 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection9.html">
+              <span class="nav-link-text">Лекция 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection10.html">
+              <span class="nav-link-text">Лекция 9.1. Основные понятия качества ИС./</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection11.html">
+              <span class="nav-link-text">Лекция 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems2"
+          aria-controls="collapseSubItems2"
+          aria-expanded="true"
+        >Тесты</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №3</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №4</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №5</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №6</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №7</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №8</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №9</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №10</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №12</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Тест по лекции №13</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems3"
+        aria-controls="collapseSubItems3"
+        aria-expanded="true"
+        href="#">Практические работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №1. Анализ предметной области различными
+                методами: контент-анализ, вебометрический анализ, анализ ситуаций, 
+                моделирование и др.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №2. Изучение устройств автоматизированного 
+                сбора информации</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №3. Оценка экономической эффективности 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №4. Разработка модели архитектуры 
+                информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №5. Обоснование выбора средств 
+                проектирования информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Практическая работа №6. Описание бизнес-процессов заданной 
+                предметной области.</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems4"
+          aria-controls="collapseSubItems4"
+          aria-expanded="false"
+        >Самостоятельные <br> работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">
+                Самостоятельная работа №1. Организация и методы сбора информации. Анализ 
+                предметной области. Основные понятия системного и 
+                структурного анализа
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №2. Основные понятия и определения ИС. Жизненный цикл 
+                информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №3. Постановка задачи обработки информации. Основные виды, 
+                алгоритмы и процедуры обработки информации, модели и 
+                методы решения задач обработки информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №4. Основные модели построения информационных систем, их 
+                структура, особенности и области применения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №5. Сервисно - ориентированные архитектуры. Анализ 
+                интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №6. Методы и средства проектирования информационных систем. Case-средства для моделирования деловых процессов 
+                (бизнес-процессов). Инструментальная среда–структура, 
+                интерфейс, элементы управления.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №7. Принципы построения модели IDEF0: контекстная 
+                диаграмма, субъект моделирования, цель и точка зрения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №8. Диаграммы IDEF0: диаграммы декомпозиции, диаграммы 
+                дерева узлов, диаграммы только для экспозиции (FEO).</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №9. Работы (Activity). Стрелки (Arrow). Туннелирование 
+                стрелок. Нумерация работ и диаграмм. Каркас диаграммы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №10. Слияние и расщепление моделей/</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №11. Особенности информационного, программного и 
+                технического обеспечения различных видов информационных 
+                систем. Экспертные системы. Системы реального времени.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №12. Оценка экономической эффективности информационной 
+                системы. Стоимостная оценка проекта. Классификация типов 
+                оценок стоимости: оценка порядка величины, концептуальная 
+                оценка, предварительная оценка, окончательная оценка, 
+                контрольная оценка.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №13. Основные процессы управления проектом. Средства 
+                управления проектами.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems5"
+        aria-controls="collapseSubItems5"
+        aria-expanded="true"
+        href="#">Справочные материлы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems5" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Глоссарий</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Итоговый тест</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content-wrapper" id="all">
+  <div class="container-fluid">
+    <div class="change_page">
+      <a href="./lection2.html" id="arrow-back"><img title="Лекция 2" src="./assets/icon/arrow-left.svg"  alt="back"></a>
+      <a id="next-button" href="./lection4.html"><img title="Лекция 4" src="./assets/icon/arrow-right.svg" alt="next"></a>
+    </div>
+
+    <h1>Технологии сбора информация</h1>
+
+    <a href="../inner pages/assets/files_to_download/Лекция 3 Технологии сбора информации.doc" class="download"> Скачать лекцию в виде файла </a>
+
+    <p class="text-vvod">
+      <b>Сбор информации</b> — это процесс получения информации из внешнего мира и приведение ее к виду, стандартному для прикладной информационной системы. 
+    </p>
+    <p class="text-vvod">
+      <b>Технология сбора</b> - использование определенных методов сбора информации и технических средств, выбираемых в зависимости от вида информации и применяемых методов ее сбора. 
+    </p>
+    <h2>Методы сбора информации</h2>
+    <p class="text-vvod">
+      <b>Анкетирование</b> - метод получения первичной информации, заключающийся в составлении анкет и проведении опроса.  
+    </p>
+    <p class="text-vvod">
+      <b>Анкетёр</b> – лицо, проводящее сбор материала анкетированием (разработчик).
+    </p>
+    <p class="text-vvod">
+      <b>Респондент</b> - лицо, принимающее участие в анкетировании (заказчик).
+    </p>
+    <h2>Виды анкетирования.</h2>
+    <p class="text-vvod">
+      1. По числу респондентов:
+      <ul style="margin-left: 6vw !important;">
+        <li>Индивидуальное анкетирование (один респондент);</li>
+        <li>Групповое анкетирование (несколько респондентов); </li>
+        <li>Массовое анкетирование (от сотни до тысяч респондентов);</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      2. По полноте охвата:
+      <ul style="margin-left: 6vw !important;">
+        <li>Сплошное (опрос всех респондентов); </li>
+        <li>Выборочное (опрос части респондентов); </li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      3. По типу контактов с респондентом:
+      <ul style="margin-left: 6vw !important;">
+        <li>Очное (в присутствии анкетёра);</li>
+        <li>Заочное (анкетёр отсутствует):
+          <ul>
+            <li>Рассылка анкет по почте; </li>
+            <li>Публикация анкет в прессе; </li>
+            <li>Публикация анкет в Интернете; </li>
+            <li>Вручение и сбор анкет по месту жительства, работы и т. д.</li>
+          </ul>
+        </li>
+      </ul>
+    </p>
+    <h2>Преимущества метода анкетирования:</h2>
+    <p class="text-vvod">
+      <ul>
+        <li>Экономичность;</li>
+        <li>Оперативность;</li>
+        <li>Простая систематизация и анализ;</li>
+        <li>Высокий уровень массовости исследования;</li>
+        <li>Простота в проведении;</li>
+        <li>Самостоятельность респондента.</li>
+      </ul>
+    </p>
+    <h2>Этапы проведения анкетирования.</h2>
+    <p class="text-vvod">
+      <ol>
+        <li>Выявление цели анкетирования.</li>
+        <li>Выбор способа анкетирования.</li>
+        <li>Подбор респондентов.</li>
+        <li>
+          Составление анкеты:
+          <ul>
+            <li>анализ вопросов;</li>
+            <li>формулирование вопросов и вариантов ответов;</li>
+          </ul>
+        </li>
+        <li>Проведение анкетирования.</li>
+      </ol>
+      
+    </p>
+    <p class="text-vvod" style="margin-top: 0vh !important;">
+      <br>
+      5. Проведение анкетирования.
+    </p>
+    <h2>Структура анкеты.</h2>
+    <p class="text-vvod">
+      <ol>
+        <li>вводная часть: содержит обращение к респонденту, разъясняющее цели опроса, указание о правилах заполнения;</li>
+        <li>сведения о респонденте (о заказчике);</li>
+        <li>основные вопросы: не более 20-25;</li>
+        <li>заключение анкеты: благодарность респонденту.</li>
+      </ol>
+    </p>
+    <h2>Типы вопросов:</h2>
+    <p class="text-vvod">
+      <ol>
+        <li>
+          По форме:
+          <ul>
+            <li>Открытые - предполагают произвольный ответ. </li>
+            <li>Закрытые - предусматривают готовые варианты ответов ("да" или "нет"). </li>
+            <li>Полузакрытые - содержат наряду с готовыми вариантами ответов возможность изложения своего варианта ответа.</li>
+          </ul>
+        </li>
+        <li>
+          По функции:
+          <ul>
+            <li>основные;</li>
+            <li>наводящие;</li>
+            <li>контрольные;</li>
+            <li>уточняющие и др.</li>
+          </ul>
+        </li>
+      </ol>
+    </p>
+    <h2>Требования к формулировке вопросов:</h2>
+    <p class="text-vvod">
+      <ul>
+        <li>должны быть понятны для респондента;</li>
+        <li>лаконичны;</li>
+        <li>должны исключать двусмысленность в понимании;</li>
+      </ul>
+    </p>
+    <h2>Схема разработки опросного листа</h2>
+    <p class="text-vvod">
+      Предварительное рассмотрение:
+      <ol>
+        <li>Какая требуется информация?</li>
+        <li>Кто является целевым респондентом?</li>
+        <li>Какой метод сбора информации будет использован при опросе респондентов?</li>
+      </ol>
+    </p>
+    <p class="text-vvod">
+      Разработка вопросника
+      <ol>
+        <li>Определить структуру опросного листа.</li>
+        <li>Сократить вероятность ошибок при заполнении анкет.</li>
+      </ol>
+    </p>
+    <p class="text-vvod">
+      Технология формулирования вопросов:
+      <ol>
+        <li>Определить вид вопросов: «открытые», «полузакрытые» или «закрытые»;</li>
+        <li>Предлагать четкие форматы ответов на вопрос;</li>
+        <li>Определить, какую цель преследует каждый вопрос;</li>
+        <li>Добиться предельной точности формулировки вопроса;</li>
+        <li>Предлагаемый набор ответов не должен даже частично пересекаться;</li>
+        <li>Использовать действующий язык среды исследования;</li>
+        <li>Избегайте вопросов с двойным смыслом;</li>
+        <li>Предлагайте однозначно-понятные варианты ответов;</li>
+        <li>Вопросы должны быть реальными и имеющими ответ.</li>
+      </ol>
+    </p>
+    <p class="text-vvod">
+      <b>Анкета</b> - методическое средство для получения первичной информации, включающее в себя формулировки вопросов и возможные варианты ответов, из которых респондент должен выбрать наиболее подходящие или по образцу которых предложить собственные. 
+    </p>
+    <p class="text-vvod">
+      <b>Интервью</b> – это метод исследования по заранее намеченному плану, при котором интервьюер проводит дополнительный опрос, уточняя первичную информацию, полученную анкетированием.
+    </p>
+    <p class="text-vvod">Интервью предполагает прямой контакт между разработчиком и заказчиком. </p>
+    <h2>Виды интервью:</h2>
+    <p class="text-vvod">
+      <ul>
+        <li><b>Стандартизированное</b>: формулировка вопросов и их последовательность определены заранее и неизменны. </li>
+        <li><b>Нестандартизированное</b>: есть лишь общий план интервью. </li>
+        <li><b>Полустандартизованное</b>: используется путеводитель с перечнем необходимых и возможных вопросов. </li>
+      </ul>
+    </p>
+    <h2>Виды потребностей клиентов:</h2>
+    <ol>
+      <li><b>Базовые:</b> эти потребности относят к продуктам, которые планирует получить заказчик. </li>
+      <li><b>Непредвиденные:</b> эти потребности несут удовлетворение помимо того, которое ожидалось от покупки продукта. </li>
+    </ol>
+    <h2>Методы для определения потребностей клиента:</h2>
+    <p class="text-vvod">
+      <ul>
+        <li><b>Открытые вопросы.</b> Такой вопрос начинается с вопросительного слова и предполагает развернутый ответ клиента, т.е. дает ему возможность высказаться максимально понятно и так долго, как он того хочет. </li>
+        <li><b>Единый язык.</b> Важно не только правильно говорить с клиентом, но и подавать информацию на доступном ему языке. </li>
+        <li><b>Характеристика и выгода.</b> Следует использовать выгоду для описания товара и избегать характеристик. На характеристику клиент может никак не отреагировать или даже отреагировать отрицательно. Выгода всегда представляет продукт с положительной стороны. </li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      Процесс изучения потребностей клиента:
+      <ol>
+        <li>Определить, используется или не используется продукт.</li>
+        <li>Определить, удовлетворяет ли продукт потребности.</li>
+        <li>Определить причины неудовлетворенности, если таковая есть.</li>
+      </ol>
+    </p>
+    <p class="text-vvod">
+      <b>Техническая документация</b> - совокупность документов, используемых при проектировании, создании и внедрении программного продукта. При её создании часто требуется наличие шаблона или структуры технического документа. 
+    </p>
+    <p class="text-vvod">
+      Техническая документация:
+      <ul>
+        <li>незаполненная форма документа с комментариями о том, как следует заполнять каждое поле (раздел);</li>
+        <li>форма документа с частично заполненными полями (разделами), который можно использовать как образец. </li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      Структура документа - информация о его логическом разделении, порядок расположения показателей в документе.
+    </p>
+    <p class="text-vvod">
+      Шаблон анкеты состоит из: 
+      <ul>
+        <li>вводная часть: цель анкетирования, дальнейшее использование результатов и правила заполнения;  </li>
+        <li>сведения о заказчике и программном продукте;</li>
+        <li>краткие сведения о программно-аппаратном обеспечении разрабатываемого программного продукта; </li>
+        <li>заключительная часть анкеты: примечания, дата заполнения и благодарность заказчику.</li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      <b>Анкета не входит в число технических документов, шаблон которых описан в стандартах (ГОСТах).</b>
+    </p>
+    <p class="text-vvod">
+      Примеры оформления вопросов анкеты:
+      <ul>
+        <li>
+          Полузакрытый вопрос:
+          <ol>
+            <li>
+              Операционная система:  
+              <ul>
+                <li>MS Windows;</li>
+                <li>Linux Ubuntu;</li>
+                <li>другая:____________;</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Закрытый вопрос:
+          <ol>
+            <li style="list-style-type: none; ">
+              2.Наличие защищённого доступа:   
+              <ul>
+                <li>Да</li>
+                <li>Нет</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>
+          Открытый вопрос:
+          <ol>
+            <li style="list-style-type: none; ">3.Наличие периферийных устройств (звуковые колонки, проектор и др.):  _____________________________;</li>
+          </ol>
+        </li>
+      </ul>
+    </p>
+    <p class="text-vvod">
+      <b>Структура интервью</b>: 
+      <ul id="final-text" >
+        <li>вводная часть: цель, дата, время и состав участников со стороны заказчика и разработчика; </li>
+        <li>основная часть (опросник): сформулированы уточняющие вопросы по наполнению и основным этапам разработки программного продукта;  </li>
+        <li style="margin-bottom: 3vh !important">заключительная часть: Статус протокола, Утверждено (ФИО заказчика, должность), Согласовано (ФИО разработчика, должность). </li>
+      </ul>
+    </p>
+  </div>
+</main>
+
+
+<!-- partial -->
+  <script src='./assets/js/jquery.js'></script>
+<script src='./assets/js/bootstrap.js'></script>
+<script  src="./assets/js/script.js"></script>
+<script src="./assets/js/addition_scroll_on_page/13.js"></script>
+
+</body>
+</html>
