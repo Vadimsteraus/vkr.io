@@ -225,7 +225,7 @@ body {
 
 .text {
     height: 20vh;
-    width: 65%;
+    width: 75%;
 
     margin-top: 5vh;
     padding-right: 2vw;
@@ -260,6 +260,7 @@ body {
 
 .button:hover {
     scale: 1.1;
+    /* border-radius: 5px; */
     /* transform: rotate(2deg); */
 }
 
@@ -275,7 +276,7 @@ body {
 }
 
 .button a:hover{
-  text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F ;
+  text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
 }
 
 .bottom {
