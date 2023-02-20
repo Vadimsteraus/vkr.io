@@ -274,7 +274,7 @@ body {
 }
 
 .navbar {
-  background: #230764 !important;
+  background: #3200a8 !important;
   display: flex;
 
   transition: 1s;
@@ -283,7 +283,7 @@ body {
 
 .navbar-nav {
   overflow-y: scroll;
-  background-color: #230764 !important;
+  background-color: #3200a8 !important;
 }
 
 .navbar-nav a {
