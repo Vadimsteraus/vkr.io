@@ -299,7 +299,7 @@ body {
     left: 0;
     width: 230px;
     height: calc(100vh - 3.5rem);
-    margin-top: 3.8rem;
+    margin-top: 3.6rem;
     background: #343a40;
     box-sizing: border-box;
     /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
@@ -342,7 +342,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: calc(0.85vw + 0.85vh + 0.95vmin);
+  font-size: calc(0.95vw + 0.95vh + 1.1vmin);
   font-family: jura !important;
   font-weight: 500;
   margin-bottom: 0 !important;
@@ -443,6 +443,20 @@ h2 {
 	user-select: none;
 }
 
+
+@media (max-width: 991px) {
+  .change_page {
+    display: none;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .change_page {
+    width: 80% !important;
+  }
+
+}
 
 
 @media (min-width: 1024px) and (max-width: 1300px) {
