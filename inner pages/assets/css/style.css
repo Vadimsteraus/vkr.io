@@ -287,7 +287,7 @@ body {
 }
 
 .navbar-nav a {
-  margin-left: 0.5vw;
+  /* margin-left: 0.5vw; */
   margin-top: 0.5vh;
   /* font-size: calc(0.45vw + 0.45vh + 0.6vmin); */
 }
@@ -342,7 +342,7 @@ body {
 }
 
 .navbar-brand {
-  font-size: 23px;
+  font-size: calc(0.85vw + 0.85vh + 0.95vmin);
   font-family: jura !important;
   font-weight: 500;
   margin-bottom: 0 !important;
@@ -365,7 +365,7 @@ body {
 }
 
 .logo {
-  width: 1.7vw !important;
+  width: 2.5vw !important;
 
   margin-left: 2vw;
   margin-right: 0.5vw;
