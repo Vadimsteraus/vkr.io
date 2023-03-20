@@ -320,17 +320,6 @@ body {
 }
 
 
-.navbar.blur:focus, .navbarblur:hover {
-  filter: blur(0px);
-  filter: none;
-  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius="0");
-}
-
-.multiple-filters {
-  -webkit-backdrop-filter: blur(20px) saturate(120%) contrast(200%);
-          backdrop-filter: blur(20px) saturate(120%) contrast(200%);
-}/*# sourceMappingURL=style.css.map */
-
 .logo_text {
   display: flex;
 
