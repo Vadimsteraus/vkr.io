@@ -297,7 +297,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 240px;
+    width: 255px;
     height: calc(100vh - 3.4rem);
     padding-bottom: 2vh;
     margin-top: 9.2vh;
@@ -443,7 +443,7 @@ h2 {
 
 @media (min-width: 992px) and (max-width: 1023px) {
   .change_page {
-    width: 80% !important;
+    width: 82% !important;
   }
 
 }
@@ -451,26 +451,26 @@ h2 {
 
 @media (min-width: 1024px) and (max-width: 1300px) {
   .change_page {
-    width: 82% !important;
+    width: 83% !important;
   }
 
 }
 
 @media (min-width: 1301px) and (max-width: 1600px) {
   .change_page {
-    width: 85.5% !important;
+    width: 87.5% !important;
   }
 }
 
 @media (min-width: 1601px) and (max-width: 1800px) {
   .change_page {
-    width: 87% !important;
+    width: 90.5% !important;
   }
 }
 
 @media (min-width: 1801px) and (max-width: 2200px) {
   .change_page {
-    width: 89% !important;
+    width: 92% !important;
   }
 }
 
@@ -571,8 +571,8 @@ table {
   width: auto;
   text-align: center;
   margin-top: 2.7vh;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 5%;
+  margin-left: 5%;
 
   transition: 1s;
   transition-property: all;
