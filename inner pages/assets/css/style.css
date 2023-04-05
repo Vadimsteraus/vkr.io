@@ -292,7 +292,34 @@ body {
   /* font-size: calc(0.45vw + 0.45vh + 0.6vmin); */
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1279px) {
+  .sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 255px;
+    height: calc(100vh - 3.4rem);
+    padding-bottom: 2vh;
+    margin-top: 8.3vh;
+    background: #343a40;
+    box-sizing: border-box;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.3); */
+  }
+  .navbar-expand-lg .sidenav {
+    flex-direction: column;
+  }
+  .content-wrapper {
+    height: 3.7rem;
+    width: calc(100% - 230px);
+    margin-left: 230px;
+  }
+  .footer {
+    width: calc(100% - 230px);
+    margin-left: 230px;
+  }
+}
+
+@media (min-width: 1280px) {
   .sidenav {
     position: absolute;
     top: 0;
@@ -681,6 +708,10 @@ td {
 
 
 
+
+.textcols {
+  display: flex;
+}
 
 /* отступ для последней строки */
 
