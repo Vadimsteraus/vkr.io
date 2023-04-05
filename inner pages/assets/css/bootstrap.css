@@ -56,7 +56,7 @@
   body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1rem;
+    font-size: calc(0.55vw + 0.55vh + 0.7vmin);
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
@@ -4286,11 +4286,24 @@
   }
   
   .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+    position:relative;
+    text-decoration: none;
+    background:  no-repeat 0 100%;
+    background-image: linear-gradient(0.25turn, currentcolor, currentcolor);
+    background-size: 0% 2px;
+    transition: background-size .3s ease;
   }
   
+/* подчеркивания начало */
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  background-size: 80% 2px;
+}
+  /* подчеркивания конец */
+
   .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, 0.75);
+    
   }
   
   .navbar-dark .navbar-nav .nav-link.disabled {
@@ -4301,9 +4314,15 @@
   .navbar-dark .navbar-nav .active > .nav-link,
   .navbar-dark .navbar-nav .nav-link.show,
   .navbar-dark .navbar-nav .nav-link.active {
-    color: #fff;
+    color: white;
+
+    font-weight: 500;
+    -webkit-text-shadow: 2px 2px 2px #ffffff52;
+    -moz-text-shadow: 2px 2px 2px #ffffff52;
+        text-shadow: 0px 0px 6px #ffffff98;
   }
   
+
   .navbar-dark .navbar-toggler {
     color: rgba(255, 255, 255, 0.5);
     border-color: rgba(255, 255, 255, 0.1);

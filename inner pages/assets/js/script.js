@@ -49,5 +49,3 @@ $('.upbtn').on('click',function() {
 //     }, 500);
 //     return false;
 // });
-
-// подчеркивания
