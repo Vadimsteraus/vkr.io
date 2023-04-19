@@ -616,7 +616,6 @@ th {
   color: #09091f;
   font-weight: 450;
   text-align: justify;
-  font-size: calc(0.75vw + 0.75vh + 0.9vmin);
 }
 
 td {
@@ -625,7 +624,6 @@ td {
   color: #09091f;
   font-weight: 200;
   text-align: justify;
-  font-size: calc(0.75vw + 0.75vh + 0.9vmin);
 }
 
 /* блок с текстом */
