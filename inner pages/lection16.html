@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Лекция 14</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.css'>
+<link rel='stylesheet' href='./assets/css/font-awesome.css'>
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+
+  <div class="preloader" id="page-preloader">
+    <div class="loader"></div>
+  </div>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="logo_text" href="./main_page.html"><img class="logo" src="./assets/icon/logo.svg" alt="logo"><p class="navbar-brand">Электронное пособие по проектированию и дизайну ИС</p></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    onClick="addFilters()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+      <li class="nav-item">
+        <a class="nav-link" href="./main_page.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-collapse nav-link-show collapsed"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems1"
+        aria-controls="collapseSubItems1"
+        aria-expanded="true">
+        Лекции
+        <span class="sr-only">(current)</span></a>
+        <ul class="nav-second-level collapse collapse show" id="collapseSubItems1" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./lection1.html">
+              <span class="nav-link-text">
+                Лекция 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection2.html">
+              <span class="nav-link-text">Лекция 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection3.html">
+              <span class="nav-link-text">Лекция 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection4.html">
+              <span class="nav-link-text">Лекция 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection5.html">
+              <span class="nav-link-text">Лекция 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="16" href="./lection6.html">
+              <span class="nav-link-text">Лекция 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection7.html">
+              <span class="nav-link-text">Лекция 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection8.html">
+              <span class="nav-link-text">Лекция 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./lection9.html">
+              <span class="nav-link-text">Лекция 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection10.html">
+              <span class="nav-link-text">Лекция 9.1. Основные понятия качества информационной системы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection11.html">
+              <span class="nav-link-text">Лекция 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./lection12.html">
+            <span class="nav-link-text">Лекция 10. Перечень и комплектность документов на информационные системы согласно ЕСПД и ЕСКД. Задачи документирования.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection13.html">
+            <span class="nav-link-text">Лекция 11. Предпроектная стадия разработки. Техническое задание на разработку основные разделы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection14.html">
+            <span class="nav-link-text">Лекция 12. Построение и оптимизация сетевого графика.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection15.html">
+            <span class="nav-link-text">Лекция 13. Пользовательская документация. Маркетнговая документация.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#" id="17">
+            <span class="nav-link-text">Лекция 14. Самодокументирующиеся программы.</span>
+          </a>
+        </li>
+      </li>
+    </ul>
+  </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems2"
+          aria-controls="collapseSubItems2"
+          aria-expanded="true"
+        >Тесты</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Контрольная работа по теме "Структурный анализ ИС, основные модели построения ИС"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Контрольная работа по теме "Принципы построения IDEFO, диаграммы"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Контрольная работа по теме "..."</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Контрольная работа по теме "..."</span>
+            </a>
+          </li>
+          <li class="nav-item">
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems3"
+        aria-controls="collapseSubItems3"
+        aria-expanded="true"
+        href="#">Практические работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./practice1.html">
+              <span class="nav-link-text">Практическая работа №1. Жизненный цикл информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice2.html">
+              <span class="nav-link-text">Практическая работа №2. Системный и структурный анализ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice3.html">
+              <span class="nav-link-text">Практическая работа №3. Категории специалистов</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice4.html">
+              <span class="nav-link-text">Практическая работа №4. Анкета и интервью</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice5.html">
+              <span class="nav-link-text">Практическая работа №5. Классификация информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice6.html">
+              <span class="nav-link-text">Практическая работа №6. Иерархическая структура работ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice7.html">
+              <span class="nav-link-text">Практическая работа №7. Сетевой график</span>
+            </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="./practice8.html">
+              <span class="nav-link-text">Практическая работа №8. Техническое задание</span>
+            </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="practice9.html">
+              <span class="nav-link-text">Практическая работа №9. Определения "SOAP" и "Интересы клиента"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practice10.html">
+              <span class="nav-link-text">Практическая работа №10. Модель IDEF0</span>
+            </a>
+          </li>      
+          <li class="nav-item">
+            <a class="nav-link" href="practice11.html">
+              <span class="nav-link-text">Практическая работа №11. Описание моделей с использованием нотаций IDEF0 и ETC</span>
+            </a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="practice12.html">
+              <span class="nav-link-text">Практическая работа №12. ТЭО</span>
+            </a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="practice13.html">
+              <span class="nav-link-text">Практическая работа №13. Реинжиниринг методом интеграции</span>
+            </a>
+          </li> 
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems4"
+          aria-controls="collapseSubItems4"
+          aria-expanded="false"
+        >Самостоятельные <br> работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">
+                Самостоятельная работа №1. Организация и методы сбора информации. Анализ 
+                предметной области. Основные понятия системного и 
+                структурного анализа
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №2. Основные понятия и определения ИС. Жизненный цикл 
+                информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №3. Постановка задачи обработки информации. Основные виды, 
+                алгоритмы и процедуры обработки информации, модели и 
+                методы решения задач обработки информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №4. Основные модели построения информационных систем, их 
+                структура, особенности и области применения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №5. Сервисно - ориентированные архитектуры. Анализ 
+                интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №6. Методы и средства проектирования информационных систем. Case-средства для моделирования деловых процессов 
+                (бизнес-процессов). Инструментальная среда–структура, 
+                интерфейс, элементы управления.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №7. Принципы построения модели IDEF0: контекстная 
+                диаграмма, субъект моделирования, цель и точка зрения.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №8. Диаграммы IDEF0: диаграммы декомпозиции, диаграммы 
+                дерева узлов, диаграммы только для экспозиции (FEO).</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №9. Работы (Activity). Стрелки (Arrow). Туннелирование 
+                стрелок. Нумерация работ и диаграмм. Каркас диаграммы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №10. Слияние и расщепление моделей/</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №11. Особенности информационного, программного и 
+                технического обеспечения различных видов информационных 
+                систем. Экспертные системы. Системы реального времени.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №12. Оценка экономической эффективности информационной 
+                системы. Стоимостная оценка проекта. Классификация типов 
+                оценок стоимости: оценка порядка величины, концептуальная 
+                оценка, предварительная оценка, окончательная оценка, 
+                контрольная оценка.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Самостоятельная работа №13. Основные процессы управления проектом. Средства 
+                управления проектами.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems5"
+        aria-controls="collapseSubItems5"
+        aria-expanded="true"
+        href="#">Справочные Материалы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems5" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Глоссарий</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="nav-link-text">Итоговый тест</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content-wrapper" id="all">
+  <div class="container-fluid">
+    <div class="change_page">
+      <a href="./lection15.html" id="arrow-back"><img title="Лекция 13" src="./assets/icon/arrow-left.svg"  alt="back"></a>
+      <a id="next-button" href="./lection17.html"><img title="Лекция 15" src="./assets/icon/arrow-right.svg" alt="next"></a>
+    </div>
+
+    <h1>Самодокументирующиеся программы.</h1>
+    
+    <a href="../inner pages/assets/files_to_download/Лекция 14. Самодокументирующиеся программы.docx" class="download"><img style="width: 4vw;position: relative;margin-right: 0vw !important;box-shadow: unset !important;border-radius: 0px !important;" src="./assets/icon/docx.svg">Скачать лекцию в виде файла </a>
+    <p class="text-vvod">
+      Принцип обработки данных – организация независимых файлов в одном файле, в котором каждая запись содержит все данные файлов, относящиеся к данному ключу.
+    </p>
+    <p class="text-vvod">
+      Тем не менее, практика документирования программ противоречит собственным теориям. Обычно пытаемся поддерживать программу в виде, пригодном для ввода в машину, а независимый комплект документации, состоящей из текста и блок-схем, - в виде, пригодном для чтения человеком.
+    </p>
+    <p class="text-vvod">
+      Результаты этого подтверждают мысль о неразумности поддержки независимых файлов. Программная документация получается удивительно плохой, а ее сопровождение - и того хуже. Вносимые в программу изменения не получают быстрого, точного и обязательного отражения в документе.
+    </p>
+    <p class="text-vvod">
+      Предполагается, что правильным решением должно быть слияние файлов: включение документации в исходный текст программы. Это одновременно и сильный побудительный мотив к должному сопровождению, и гарантия того, что документация всегда будет под рукой у пользователя. Такие программы называют самодокументирующимися.
+    </p>
+    <p class="text-vvod">
+      Очевидно, при этом неудобно, хотя и возможно, включать блок-схемы, если в этом есть необходимость. Но, приняв во внимание анахронизм блок-схем и использование преимущественно языков высокого уровня, становится возможным объединить программу с документацией.
+    </p>
+    <p class="text-vvod">
+      Использование исходного кода программы в качестве носителя документации влечет некоторые ограничения. С другой стороны, непосредственный доступ читателя документации к каждой строке программы открывает возможность для новых технологий. Пришло время разработать радикально новые подходы и методы составления программной документации.
+    </p>
+    <p class="text-vvod">
+      В качестве важнейшей цели должны попытаться предельно уменьшить груз документации - груз, с которым ни мы, ни наши предшественники толком не справились.
+    </p>
+    <p class="text-vvod">
+      PL/I — разработанный в 1964 году язык программирования, созданный для научных, инженерных и бизнес-ориентированных вычислений.
+    </p>
+    <p class="text-vvod">
+      <b>Подход.</b> Первое предложение состоит в том, чтобы разделы программы, обязанные присутствовать в ней согласно требованиям языка программирования, содержали как можно больше документации. Соответственно, метки, операторы объявления и символические имена включают в задачу передать читателю как можно больше смысла.
+    </p>
+    <div class="img" style="flex-direction: column; align-items: center;">
+      <img src="./assets/img/lection16/1.png" alt="illustration1">
+      <figcaption>Рис. 1. Сравнение блок-схемы и соответствующей программы на PL/I (фрагмент)</figcaption>
+      <br>
+    </div>
+    <p class="text-vvod">
+      Второе предложение - в максимальной мере использовать пространство и формат, чтобы улучшить читаемость и показать отношения подчиненности и вложенности.
+    </p>
+    <p class="text-vvod">
+      Третье предложение - включить в программу необходимую текстовую документацию в виде параграфов комментариев. В большинстве программ достаточно иметь построчные комментарии. В программах, отвечающих жестким стандартам организаций на "хорошее документирование", их часто слишком много. Однако даже в этих программах обычно недостаточно параграфов комментариев, которые действительно способствуют понятности и обозримости целого.
+    </p>
+    <p class="text-vvod">
+      Поскольку документация встраивается в используемые программой структуру, имена и форматы, значительную часть этой работы необходимо проделать, когда программу только начинают писать. Но именно тогда и нужно писать документацию. Поскольку подход на основе самодокументирования сокращает дополнительную работу, меньше препятствий к его осуществлению.
+    </p>
+    <p class="text-vvod">
+      Некоторые приемы. На рисунке 2 показана самодокументирующаяся программа на языке PL/I.4 Числа в кружочках не являются ее частью, а служат метадокументацией для ссылок при обсуждении.
+    </p>
+    <ol>
+      <li>Используйте для каждого запуска свое имя задания и ведите журнал, в котором учитывайте предмет проверки, время и полученные результаты. Суффикс можно использовать в качестве номера запуска, связывающего запись в журнале и листинг. При этом для разных прогонов требуются свои карты задания, но их можно делать колодами с дублированием постоянных данных.</li>
+      <li>Используйте мнемонические названия программы, включающие идентификатор версии - в предположении, что будет несколько версий. Здесь индекс - две младшие цифры года.</li>
+      <li>Включите текстовое описание в качестве комментариев к PROCEDURE.</li>
+      <li>Для документирования алгоритмов ссылайтесь, где можно, на литературу. Это экономит место, адресует к более полному освещению, чем можно дать в программе, и дает возможность знающему читателю пропустить ссылку, оставляя уверенность, что он вас поймет.</li>
+      <li>Покажите связь с алгоритмом, описанным в книге: а) изменения; б) особенности использования; в) представление данных.</li>
+      <li>Объявите все переменные. Используйте мнемонику. Используйте комментарии для превращения оператора DECLARE в полноценную легенду. Обратите внимание, что он уже содержит имена и описания структур, нужно лишь дополнить его описаниями назначения. Сделав это здесь, вы избежите отдельного повторения имен и структурных описаний.</li>
+      <li>Поставьте метку в начале инициализации.</li>
+      <li>Поставьте метки перед группами операторов, соответствующие операторам алгоритма, описанного в книге.</li>
+      <li>Используйте отступы для показа структуры и группирования.</li>
+      <li>Вручную поставьте стрелки, показывающие логический порядок операторов. Они очень полезны при отладке и внесении изменений. Их можно поместить на правом поле места для комментариев и сделать частью вводимого в машину текста.</li>
+      <li>Вставьте строчные комментарии для пояснения всего, что неочевидно. При использовании изложенных выше приемов они окажутся короче и малочисленней, чем обычно.</li>
+      <li>Помещайте несколько операторов на одной строке или один оператор на нескольких строках в соответствии с логической группировкой, а также, чтобы показать связь с описанием алгоритма.</li>
+    </ol>
+    <p class="text-vvod">
+      <b>Возражения.</b> Каковы недостатки такого подхода к документированию? Они существуют, и в прежние времена были существенными, но сейчас становятся мнимыми.
+    </p>
+    <div class="img" style="flex-direction: column; align-items: center;">
+      <img src="./assets/img/lection16/1.png" alt="illustration1">
+      <figcaption>Рис. 2. Самодокументирующаяся программа</figcaption>
+      <br>
+    </div>
+    <p class="text-vvod">
+      Самым серьезным возражением является увеличение размера исходного текста, который нужно хранить. Поскольку практика все более тяготеет к хранению исходного кода в активных устройствах, это вызывает растущее беспокойство.
+    </p>
+    <p class="text-vvod">
+      Однако одновременно движемся к хранению в активных устройствах текстовых документов, доступ к которым и изменение осуществляется с помощью компьютеризированных текстовых редакторов. Как указывалось выше, слияние текста и программы сокращает общее количество хранимых символов.
+    </p>
+    <p class="text-vvod">
+      Аналогичное возражение вызывает аргумент, что самодокументирующиеся программы требуют больше ввода с клавиатуры. В печатном документе требуется, по меньшей мере, одно нажатие на клавишу для каждого символа на каждый черновой экземпляр. В самодокументирующейся программе суммарное количество символов меньше, и на один символ приходится меньше нажатий на клавиши, так как черновики не перепечатываются.
+    </p>
+    <p class="text-vvod">
+      А что же блок-схемы и структурные графы? Если используется только структурный граф самого высокого уровня, он вполне может содержаться в отдельном документе, поскольку редко подвергается изменениям. Но, конечно, его можно включить в исходный текст программы в качестве комментария, что будет благоразумно.
+    </p>
+    <br>
+  </div>
+</main>
+
+
+<!-- partial -->
+  <script src='./assets/js/jquery.js'></script>
+<script src='./assets/js/bootstrap.js'></script>
+<script  src="./assets/js/script.js"></script>
+<script src="./assets/js/addition_scroll_on_page/17.js"></script>
+
+</body>
+</html>
