@@ -29,6 +29,8 @@ $('.upbtn').on('click',function() {
     }, 500);
     return false;
 });
+
+
 // стрелочка вниз
 
 // $('body').append('<div class="upbtn"></div>');            

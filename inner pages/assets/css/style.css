@@ -422,6 +422,22 @@ h1 {
   transition-property: all;
 }
 
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 5vh;
+  margin-bottom: 1vh;
+  margin-left: 7vw;
+  margin-right: 7vw;
+
+  font-family: jura;
+}
+
+.modal-buttons button {
+  font-size: calc(1.2vw + 1.2vh + 1.35vmin);
+}
+
 h2 {
   padding-top: 5vh;
   margin-bottom: 1vh;
@@ -802,7 +818,5 @@ td {
 .upbtn:hover:before {
   bottom:14px;
 } */
-
-
 
 

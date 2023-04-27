@@ -2358,18 +2358,18 @@
   
   .btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #3200a8 ;
+    border-color: #3200a8ce ;
   }
   
   .btn-primary:hover {
     color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+    background-color: #3200a8 ;
+    border-color: #3200a8ce ;
   }
   
   .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem #733fec80;
   }
   
   .btn-primary.disabled, .btn-primary:disabled {
@@ -5421,6 +5421,7 @@
   }
   
   .modal-title {
+    font-family: jura;
     margin-bottom: 0;
     line-height: 1.5;
   }
@@ -5461,7 +5462,7 @@
   
   @media (min-width: 576px) {
     .modal-dialog {
-      max-width: 500px;
+      max-width: 80%;
       margin: 1.75rem auto;
     }
     .modal-dialog-centered {
@@ -5474,7 +5475,7 @@
   
   @media (min-width: 992px) {
     .modal-lg {
-      max-width: 800px;
+      max-width: 80%;
     }
   }
   

@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Глоссарий</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.css'>
+<link rel='stylesheet' href='./assets/css/font-awesome.css'>
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+
+  <div class="preloader" id="page-preloader">
+    <div class="loader"></div>
+  </div>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="logo_text" href="./main_page.html"><img class="logo" src="./assets/icon/logo.svg" alt="logo"><p class="navbar-brand">Электронное пособие по проектированию и дизайну ИС</p></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    onClick="addFilters()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+      <li class="nav-item">
+        <a class="nav-link" href="./main_page.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems1"
+        aria-controls="collapseSubItems1"
+        aria-expanded="true">
+        Лекции
+        <span class="sr-only">(current)</span></a>
+        <ul class="nav-second-level collapse" id="collapseSubItems1" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./lection1.html">
+              <span class="nav-link-text">
+                Лекция 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection2.html">
+              <span class="nav-link-text">Лекция 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection3.html">
+              <span class="nav-link-text">Лекция 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection4.html">
+              <span class="nav-link-text">Лекция 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection5.html">
+              <span class="nav-link-text">Лекция 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="16" href="./lection6.html">
+              <span class="nav-link-text">Лекция 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection7.html">
+              <span class="nav-link-text">Лекция 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection8.html">
+              <span class="nav-link-text">Лекция 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./lection9.html">
+              <span class="nav-link-text">Лекция 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection10.html">
+              <span class="nav-link-text">Лекция 9.1. Основные понятия качества информационной системы.</span>
+            </a>
+          </li>
+<li class="nav-item">
+            <a class="nav-link" href="./lection11.html">
+              <span class="nav-link-text">Лекция 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./lection12.html">
+            <span class="nav-link-text">Лекция 10. Перечень и комплектность документов на информационные системы согласно ЕСПД и ЕСКД. Задачи документирования.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection13.html">
+            <span class="nav-link-text">Лекция 11. Предпроектная стадия разработки. Техническое задание на разработку основные разделы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection14.html">
+            <span class="nav-link-text">Лекция 12. Построение и оптимизация сетевого графика.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection15.html">
+            <span class="nav-link-text">Лекция 13. Пользовательская документация. Маркетинговая документация.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection16.html">
+            <span class="nav-link-text">Лекция 14. Самодокументирующиеся программы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection17.html">
+            <span class="nav-link-text">Лекция 15. Назначение, виды и оформление сертификатов.</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./lection12.html">
+            <span class="nav-link-text">Лекция 10. Перечень и комплектность документов на информационные системы согласно ЕСПД и ЕСКД. Задачи документирования.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection13.html">
+            <span class="nav-link-text">Лекция 11. Предпроектная стадия разработки. Техническое задание на разработку основные разделы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection14.html">
+            <span class="nav-link-text">Лекция 12. Построение и оптимизация сетевого графика.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection15.html">
+            <span class="nav-link-text">Лекция 13. Пользовательская документация. Маркетинговая документация.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection16.html">
+            <span class="nav-link-text">Лекция 14. Самодокументирующиеся программы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection17.html">
+            <span class="nav-link-text">Лекция 15. Назначение, виды и оформление сертификатов.</span>
+          </a>
+        </li>
+      </li>
+    </ul>
+  </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems2"
+          aria-controls="collapseSubItems2"
+          aria-expanded="true"
+        >Тесты</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems2" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="test1.html">
+              <span class="nav-link-text">Контрольная работа по теме "Основы проектирования информационных систем"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test2.html">
+              <span class="nav-link-text">Контрольная работа по теме "Процессы объектно-ориентированного анализа и проектирования"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test3.html">
+              <span class="nav-link-text">Контрольная работа по теме "Система обеспечения качества информационных систем"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test4.html">
+              <span class="nav-link-text">Контрольная работа по теме "Разработка документации информационных систем"</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems3"
+        aria-controls="collapseSubItems3"
+        aria-expanded="true"
+        href="#">Практические работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./practice1.html">
+              <span class="nav-link-text">Практическая работа №1. Жизненный цикл информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice2.html">
+              <span class="nav-link-text">Практическая работа №2. Системный и структурный анализ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice3.html">
+              <span class="nav-link-text">Практическая работа №3. Категории специалистов</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice4.html">
+              <span class="nav-link-text">Практическая работа №4. Анкета и интервью</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice5.html">
+              <span class="nav-link-text">Практическая работа №5. Классификация информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice6.html">
+              <span class="nav-link-text">Практическая работа №6. Иерархическая структура работ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice7.html">
+              <span class="nav-link-text">Практическая работа №7. Сетевой график</span>
+            </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="./practice8.html">
+              <span class="nav-link-text">Практическая работа №8. Техническое задание</span>
+            </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="practice9.html">
+              <span class="nav-link-text">Практическая работа №9. Определения "SOAP" и "Интересы клиента"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practice10.html">
+              <span class="nav-link-text">Практическая работа №10. Модель IDEF0</span>
+            </a>
+          </li>      
+          <li class="nav-item">
+            <a class="nav-link" href="practice11.html">
+              <span class="nav-link-text">Практическая работа №11. Описание моделей с использованием нотаций IDEF0 и ETC</span>
+            </a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="practice12.html">
+              <span class="nav-link-text">Практическая работа №12. ТЭО</span>
+            </a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="practice13.html">
+              <span class="nav-link-text">Практическая работа №13. Реинжиниринг методом интеграции</span>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="practice14.html">
+              <span class="nav-link-text">Практическая работа №14. Пользовательская документация. Маркетинговая документация</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practice15.html">
+              <span class="nav-link-text">Практическая работа №15. Изучение средств автоматизированного документирования</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems4"
+          aria-controls="collapseSubItems4"
+          aria-expanded="false"
+        >Самостоятельные <br> работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work1.html">
+              <span class="nav-link-text">
+                Самостоятельная работа 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work2.html">
+              <span class="nav-link-text">Самостоятельная работа 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work3.html">
+              <span class="nav-link-text">Самостоятельная работа 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work4.html">
+              <span class="nav-link-text">Самостоятельная работа 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work5.html">
+              <span class="nav-link-text">Самостоятельная работа 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work6.html">
+              <span class="nav-link-text">Самостоятельная работа 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work7.html">
+              <span class="nav-link-text">Самостоятельная работа 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work8.html">
+              <span class="nav-link-text">Самостоятельная работа 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work9.html">
+              <span class="nav-link-text">Самостоятельная работа 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work10.html">
+              <span class="nav-link-text">Самостоятельная работа 9.1. Основные понятия качества информационной системы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work11.html">
+              <span class="nav-link-text">Самостоятельная работа 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work12.html">
+              <span class="nav-link-text">Самостоятельная работа 10. Перечень и комплектность документов на информационные системы согласно ЕСПД и ЕСКД. Задачи документирования.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work13.html">
+              <span class="nav-link-text">Самостоятельная работа 11. Предпроектная стадия разработки. Техническое задание на разработку основные разделы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work14.html">
+              <span class="nav-link-text">Самостоятельная работа 12. Построение и оптимизация сетевого графика.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work15.html">
+              <span class="nav-link-text">Самостоятельная работа 13. Пользовательская документация. Маркетинговая документация.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work16.html">
+              <span class="nav-link-text">Самостоятельная работа 14. Самодокументирующиеся программы.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work17.html">
+              <span class="nav-link-text">Самостоятельная работа 15. Назначение, виды и оформление сертификатов.</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse nav-link-show collapsed"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems5"
+        aria-controls="collapseSubItems5"
+        aria-expanded="true"
+        href="#">Справочные Материалы</a>
+        <ul class="nav-second-level collapse collapse show" id="collapseSubItems5" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link active" href="glossary.html" id="17">
+              <span class="nav-link-text">Глоссарий</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="final-test.html">
+              <span class="nav-link-text">Итоговый тест</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content-wrapper" id="all">
+  <div class="container-fluid">
+    <div class="change_page">
+      <a style="opacity: 0; pointer-events: none;" href="./lection16.html" id="arrow-back"><img title="Лекция 14" src="./assets/icon/arrow-left.svg"  alt="back"></a>
+      <a id="next-button" href="./final-test.html"><img title="Итоговое тестирование" src="./assets/icon/arrow-right.svg" alt="next"></a>
+    </div>
+<br>
+<h1>Глоссарий</h1>
+<br>
+<p class="text-vvod">Инструкция: синие кнопки - активные, голубые - неактивные. Для выхода из просмотра слов на определнную букву можно нажать на пространство вне области модального окна, на крестик в верхней части окна и на кнопку "Выйти" в нижней части модального окна. Если не получается нажать на кнопку - необходимо сделать так, чтобы нужная буква была вне горизонтальной области, в которой находится кнопка для листания страниц</p>
+<h2>Русский алфавит</h2>
+<br>
+
+<div class="modal-buttons">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal1">
+    А
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal2">
+    Б
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal3">
+    В
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal4">
+    Г
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal5">
+    Д
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal6"disabled>
+    Е
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal7" disabled>
+    Ё
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal8">
+    Ж
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal9">
+    З
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal10">
+    И
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal11" disabled>
+    Й
+  </button>
+</div>
+
+
+<div class="modal-buttons">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal12">
+    К
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal13">
+    Л
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal14">
+    М
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal15">
+    Н
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal16">
+    О
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal17">
+    П
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal18">
+    Р
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal19">
+    С
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal20">
+    Т
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal21" disabled>
+    У
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal22">
+    Ф
+  </button>
+</div>
+<div class="modal-buttons">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal23" disabled>
+    Х
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal24" disabled>
+    Ц
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal25" disabled>
+    Ч
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal26" disabled>
+    Ш
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal27" disabled>
+    Щ
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal28" disabled>
+    Ъ
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal29" disabled>
+    Ы
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal30" disabled>
+    Ь
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal31">
+    Э
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal32" disabled>
+    Ю
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal33">
+    Я
+  </button>
+</div>
+<br><br>
+<h2>Англиский алфавит</h2>
+<div class="modal-buttons">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal34" disabled>
+    A
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal35"disabled>
+    B
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal36">
+    C
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal37"disabled>
+    D
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal38">
+    E
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal39" disabled>
+    F
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal40"disabled>
+    G
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal41"disabled>
+    H
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal42">
+    I
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal43"disabled>
+    J
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal44"disabled>
+    K
+  </button>
+</div>
+<div class="modal-buttons">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal45"disabled>
+    L
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal46"disabled>
+    M
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal47"disabled>
+    N
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal48">
+    O
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal49"disabled>
+    P
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal50"disabled>
+    Q
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal51"disabled>
+    R
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal52">
+    S
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal53"disabled>
+    T
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal54"disabled>
+    U
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal55"disabled>
+    V
+  </button>
+</div>
+<div class="modal-buttons" style="justify-content: space-around !important">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal56"disabled>
+    W
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal57"disabled>
+    X
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal58"disabled>
+    Y
+  </button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal59"disabled>
+    Z
+  </button>
+</div>
+<br>
+<br>
+<!-- Modal -->
+<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "А"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Анкетирование</b> - метод получения первичной информации, заключающийся в составлении анкет и проведении опроса. </p>
+        <p class="text-vvod"><b>Анкетёр</b> – лицо, проводящее сбор материала анкетированием (разработчик). </p>
+        <p class="text-vvod"><b>Архитектура информационной системы</b> – называется концепция, согласно которой взаимодействуют компоненты информационной системы. </p>
+        <p class="text-vvod"><b>Апплет</b> - это несамостоятельный компонент программного обеспечения, работающий в контексте другого, полновесного приложения, предназначенный для одной узкой задачи и не имеющий ценности в отрыве от базового приложения. </p>
+        <p class="text-vvod"><b>Аппаратный контроль</b> реализуется посредством специально встроенных в систему дополнительных технических схем. Этот вид контроля также подразделяется на непрерывный и оперативный (аппаратно-логический) контроль достоверности, а также непрерывный контроль работоспособности.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква Б"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Безотказность</b> - свойство системы сохранять работоспособное состояние в течение некоторого времени или наработки (наработка - продолжительность или объем работы системы).</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "В"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Взвешенный граф</b> - граф, каждому ребру которого поставлено в соответствие некое значение (вес ребра, или же время работ).</p>
+        <p class="text-vvod"><b>Веб-сервис</b> – идентифицируемая веб-адресом программная система со стандартизированными интерфейсами. Веб-службы могут взаимодействовать между собой и со сторонними приложениями посредством сообщений, основанных на определенных протоколах. </p>
+        <p class="text-vvod"><b>Вендор</b> — это физическое или юридическое лицо, которое производит и/или поставляет товары под собственным брендом. Вендор может не производить продукцию самостоятельно, его основная задача — продвижение товара и его распределение.</p>
+        <p class="text-vvod"><b>Ведомость эксплуатационных документов</b> - перечень эксплуатационных документов на программу</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Г"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Генезисный контроль</b> проводится для выяснения технического состояния системы в прошлые моменты времени с целью определения причин сбоев и отказов системы, имевших место в прошлом; сбора статистических данных об ошибках, их характере, величине и последствиях (экономических потерях) этих ошибок для ИС.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Д"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Данные</b> – это информация, представленная в виде, пригодном для обработки автоматическими средствами.</p>
+        <p class="text-vvod"><b>Долговечность</b> - свойство системы сохранять при установленной системе технического обслуживания и ремонта работоспособное состояние до наступления предельного состояния, то есть такого момента, когда дальнейшее использование системы по назначению недопустимо или нецелесообразно.</p>
+        <p class="text-vvod"><b>Достоверность функционирования</b> — свойство системы, обусловливающее безошибочность производимых ею преобразований информации. Достоверность функционирования информационной системы полностью определяется и измеряется достоверностью ее результатной информации.</p>
+        <p class="text-vvod"><b>Достоверность информации</b> — это свойство информации отражать реально существующие объекты с необходимой точностью. Достоверность информации измеряется вероятностью того, что отражаемое информацией значение параметра отличается от истинного значения этого параметра в пределах необходимой точности.</p>
+        <p class="text-vvod"><b>Документирование</b> - это создание документа с использованием различных методов, способов и средств фиксирования информации на материальном носителе.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Ж"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Жизненный цикл информационной системы</b> – период времени, который начинается с момента принятия решения о необходимости создания информационной системы и заканчивается в момент ее полного изъятия из эксплуатации. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "З"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Знак</b> - это метка, предмет, которым обозначается что-нибудь (буква, цифра, отверстие). Знак вместе с его значением называют символом.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "И"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Информация</b> – сведения (сообщения, данные) независимо от формы их представления.</p>
+        <p class="text-vvod"><b>Информационные технологии</b> – процессы и методы поиска, сбора, хранения, обработки, предоставления, распространения информации, а также способы осуществления таких процессов и методов. </p>
+        <p class="text-vvod"><b>Информационно-телекоммуникационная сеть</b> – технологическая система, предназначенная для передачи по линиям связи информации, доступ к которой осуществляется с использованием средств вычислительной техники. </p>
+        <p class="text-vvod"><b>Информационная система (ИС)</b> – основной компонент автоматизированных систем управления. </p>
+        <p class="text-vvod"><b>Иерархическая структура работ</b> — это разбиение вашего проекта на более мелкие и измеримые части. ИСР описывает все результаты/работы, которые должны быть получены/выполнены для завершения проекта.</p>
+        <p class="text-vvod"><b>Интерфе́йс (от англ. interface)</b> — общая граница между двумя функциональными объектами, требования к которой определяются стандартом и совокупностью средств, методов и правил взаимодействия (управления, контроля и т.д.) между элементами системы. </p>
+        <p class="text-vvod"><b>Информационная услуга (сервис)</b> - это атомарная прикладная функция автоматизированной системы, которая пригодна для использования при разработке приложений, реализующих прикладную логику автоматизируемых процессов как в самой системе, так и для использования в приложениях других автоматизированных систем. </p>
+        <p class="text-vvod"><b>Информационное обеспечение</b> — это совокупность форм документов, классификаторов, нормативной базы и реализованных решений по объемам, размещению и формам существования информации, применяемой в АИС при ее функционировании. </p>
+        <p class="text-vvod"><b>Иерархический метод</b> реализует достаточно жесткую процедуру построения структуры классификации. Предварительно определяется цель — набор свойств, которыми должны обладать классифицируемые объекты. Эти свойства принимаются за признаки классификации. В иерархической системе классификации каждый объект на любом уровне должен быть отнесен к одному классу, характеризуемому конкретным значением выбранного классификационного признака. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "К"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Каскадная модель ЖЦ</b> – предусматривает последовательное выполнение всех этапов проекта в строго фиксированном порядке. Переход на следующий этап означает полное завершение работ на предыдущем этапе.</p>
+        <p class="text-vvod"><b>Композитное (составное) приложение</b> - программное решение для конкретной прикладной проблемы, которое связывает прикладную логику процесса с источниками данных и информационных услуг, хранящихся на разнородном множестве базовых информационных систем. </p>
+        <p class="text-vvod"><b>Качество информационной системы</b> — это совокупность свойств системы, обусловливающих возможность ее использования для удовлетворения определенных в соответствии с ее назначением потребностей. </p>
+        <p class="text-vvod"><b>Контроль</b> — процесс получения и обработки информации с целью оценки соответствия фактического состояния объекта предъявляемым к нему требованиям и выработки соответствующего управляющего решения.</p>
+        <p class="text-vvod"><b>Компонент</b> — программа, рассматриваемая как единое целое, выполняющая законченную функцию и применяемая самостоятельно или в составе комплекса</p>
+        <p class="text-vvod"><b>Комплекс</b> — программа, состоящая из двух или более компонентов и (или) комплексов, выполняющих взаимосвязанные функции, и применяемая самостоятельно или в составе другого комплекса</p>
+        <p class="text-vvod"><b>Кодирование информации</b> - это специально выработанная система приемов (правил) фиксирования информации.</p>
+        <p class="text-vvod"><b>Код</b> - это набор знаков, упорядоченных в соответствии с определенными правилами того или иного языка, для передачи информации.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Л"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Лингвистическое обеспечение</b> — это совокупность средств и правил для формализации естественного языка, используемых при общении пользователей и эксплуатационного персонала автоматизированной информационной системы с комплексом средств автоматизации при функционировании АИС. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "М"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Модель жизненного цикла</b> – структура, содержащая процессы, действия и задачи, которые осуществляются в ходе разработки, функционирования, сопровождения программного продукта в течение всей жизни системы, от определения требований до завершения ее использования.</p>
+        <p class="text-vvod"><b>Микросервисы</b> — это маленькие автономные сервисы, работающие вместе и спроектированные вокруг бизнес-домена. — Sam Newman 2015, Principles Of Microservices</p>
+        <p class="text-vvod"><b>Методическое обеспечение</b> — это совокупность документов, описывающих технологию функционирования автоматизированной информационной системы, методы выбора и применения пользователями технологических приемов для получения конкретных результатов при функционировании АИС. </p>
+        <p class="text-vvod"><b>Математическое обеспечение</b> — это совокупность математических методов, моделей и алгоритмов, примененных в АИС. </p>
+        <p class="text-vvod"><b>Метод документирования</b> - это прием или совокупность приемов фиксирования информации на материальном носителе с помощью знаковых систем (характер кодов языков, знаковые системы и т.д.). </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Н"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Нестандартизированное интервью</b> – есть лишь общий план интервью. </p>
+        <p class="text-vvod"><b>Надежность</b> - это свойство системы сохранять во времени в установленных пределах значения всех параметров, характеризующих способность выполнять требуемые функции в заданных режимах и условиях применения.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "О"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Организационное обеспечение</b> — это совокупность документов, устанавливающих организационную структуру, права и обязанности пользователей и эксплуатационного персонала автоматизированных информационных систем в условиях функционирования, проверки и обеспечения работоспособности АИС. </p>
+        <p class="text-vvod"><b>Организационный контроль</b> достоверности является одним из основных в ИС. Он представляет собой комплекс мероприятий, предназначенных для выявления ошибок на всех этапах участия звена в работе системы, причем обязательным элементом этих мероприятий является человек или коллектив людей.</p>
+        <p class="text-vvod"><b>Описание применения</b> — сведения о назначении программы, области применения, применяемых методах, классе решаемых задач, ограничениях для применения, минимальной конфигурации технических средств</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "П"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Проектирование информационных систем (ИС)</b> – процесс создания и сопровождения систем в виде жизненного цикла (ЖЦ) информационной системы. </p>
+        <p class="text-vvod"><b>Поэтапная модель ЖЦ с промежуточным контролем</b> – разработка ИС ведется итерациями с циклами обратной связи между этапами. </p>
+        <p class="text-vvod"><b>Процесс</b> – совокупность взаимосвязанных действий, преобразующих входные данные в выходные. </p>
+        <p class="text-vvod"><b>Полустандартизованное интервью</b> – используется путеводитель с перечнем необходимых и возможных вопросов. </p>
+        <p class="text-vvod"><b>Программное обеспечение</b> — это совокупность программ на носителях данных и программных документов, предназначенная для отладки, функционирования и проверки работоспособности АИС. </p>
+        <p class="text-vvod"><b>Правовое обеспечение</b> — это совокупность правовых норм, регламентирующих правовые отношения при функционировании АИС и юридический статус результатов ее функционирования. </p>
+        <p class="text-vvod"><b>Профилактический контроль и одна из наиболее распространенных его форм</b> — тестовый контроль, предназначены для выявления состояния системы в целом и отдельных ее звеньев до включения системы в рабочий режим. </p>
+        <p class="text-vvod"><b>Прагматический контроль</b> определяет потребительную стоимость (полезность, ценность) информации для управления, своевременность и актуальность информации, ее полноту и доступность.</p>
+        <p class="text-vvod"><b>Программный контроль</b> основан на использовании специальных программ и логических методов проверки достоверности информации или правильности работы отдельных компонентов системы и всей системы в целом. Программный контроль, в свою очередь, подразделяется на программно-логический, алгоритмический и тестовый.</p>
+        <p class="text-vvod"><b>Программно-логический контроль</b> базируется на использовании синтаксической или семантической избыточности; алгоритмический контроль использует как основу вспомогательный усеченный алгоритм преобразования информации, логически связанный с основным рабочим алгоритмом.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Р"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Респондент</b> - лицо, принимающее участие в анкетировании (заказчик). </p>
+        <p class="text-vvod"><b>Ресурсы</b> - оборудование, производственные мощности или денежные средства, так и трудовые ресурсы, внутренние или внешние для организации, выполняющей проект. </p>
+        <p class="text-vvod"><b>Ремонтопригодность</b> - свойство системы, заключающееся в приспособленности к предупреждению и обнаружению причин возникновения отказов, повреждений и поддержанию и восстановлению работоспособного состояния путем проведения технического обслуживания и ремонтов.</p>
+        <p class="text-vvod"><b>Рабочий контроль, или контроль в рабочем режиме</b>, выполняется в процессе выполнения системой возложенных на нее функций. Он, в свою очередь, может быть разделен на функциональный контроль и контроль качества продукции.</p>
+        <p class="text-vvod"><b>Руководство системного программиста</b> - сведения для проверки, обеспечения функционирования и настройки программы на условия конкретного применения</p>
+        <p class="text-vvod"><b>Руководство программиста</b> - требования, подлежащие проверке при испытании программы, а также порядок и методы их контроля</p>
+        <p class="text-vvod"><b>Руководство оператора</b> - сведения для обеспечения процедуры общения оператора с вычислительной системой в процессе выполнения программы</p>
+        <p class="text-vvod"><b>Руководство по техническому обслуживанию</b> - сведения для применения тестовых и диагностических программ при обслуживании технических средств</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "С"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Стадия</b> – часть процесса создания ИС, ограниченная определенными временными рамками и заканчивающаяся выпуском конкретного продукта (моделей, программных компонентов, документации), определяемого заданными для данной стадии требованиями. </p>
+        <p class="text-vvod"><b>Спиральная модель ЖЦ</b> – на каждом витке спирали: выполняется создание очередной версии продукта, уточняются требования проекта, определяется его качество, планируются работы следующего витка</p>
+        <p class="text-vvod"><b>Сбор информации</b> — это процесс получения информации из внешнего мира и приведение ее к виду, стандартному для прикладной информационной системы. </p>
+        <p class="text-vvod"><b>Стандартизированное интервью</b> — формулировка вопросов и их последовательность определены заранее и неизменны. </p>
+        <p class="text-vvod"><b>Сетевой график</b> – это динамическая модель проекта, которая отражает последовательность и зависимость работ, необходимых для успешного завершения проекта. </p>
+        <p class="text-vvod"><b>Сценарий</b> — это программа, имеющая дело с готовыми программными компонентами.</p>
+        <p class="text-vvod"><b>Синтаксический контроль</b> — это, по существу, контроль достоверности данных, не затрагивающий содержательного, смыслового аспекта информации. </p>
+        <p class="text-vvod"><b>Семантический контроль</b> оценивает смысловое содержание информации, ее логичность, непротиворечивость, согласованность, диапазон возможных значений параметров, отражаемых информацией, динамику их изменения.</p>
+        <p class="text-vvod"><b>Способ документирования</b> - это действие или совокупность действий, применяемых при записи информации на материальном носителе (высекание, резьба, окрашивание, перфорирование, фотохимический, электромагнитный, оптический, механический, ручной и другие способы документирования).</p>
+        <p class="text-vvod"><b>Средство документирования</b> - это предмет (орудие) или совокупность приспособлений (оборудование, инструменты), используемых для создания документа (ручные, механизированные и автоматизированные приспособления).</p>
+        <p class="text-vvod"><b>Сетевой график в масштабе времени</b> - сетевая модель, изображённая с учётом рассчитанных временных параметров с привязкой к календарной линейке</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="Modal20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Т"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Технология сбора</b> - использование определенных методов сбора информации и технических средств, выбираемых в зависимости от вида информации и применяемых методов ее сбора. </p>
+        <p class="text-vvod"><b>Техническое задание (ТЗ)</b> — исходный документ, определяющий порядок и условия проведения работ по договору, содержащий цель, задачи, принципы выполнения, ожидаемые результаты и сроки выполнения работ. </p>
+        <p class="text-vvod"><b>Техническое обеспечение</b> — это совокупность всех технических средств, применяемых при функционировании АИС. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Ф"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Функциональный контроль</b> может преследовать цель либо только проверки работоспособности (отсутствия неисправностей) системы, либо, кроме того, установления места и причины неисправности (диагностический контроль). Контроль качества продукции является контролем достоверности информации как одного из важнейших показателей качества продукции выпускаемой ИС.</p>
+        <p class="text-vvod"><b>Формуляр</b> — основные характеристики программы, комплектность и сведения об эксплуатации программы</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal31" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Э"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Эргономическое обеспечение</b> — это совокупность реализованных решений в АИС по согласованию психологических, психофизиологических, антропометрических, физиологических характеристик и возможностей пользователей АИС с техническими характеристиками комплекса средств автоматизации АИС и параметрами рабочей среды на рабочих местах персонала АИС. </p>
+        <p class="text-vvod"><b>Эффективность</b> — это свойство системы выполнять поставленную цель в заданных условиях использования и с определенным качеством. </p>
+        <p class="text-vvod"><b>Экспертные системы в экономике</b> анализируют конъюнктуру рынка и с помощью статистических методов алгоритмов разрабатывают наиболее прибыльные экономические действия</p>
+        <p class="text-vvod"><b>Экспертные системы в торговле</b> анализируют данные прошлых запросов пользователя, изучает его история поиска за счет чего формирует рекомендации.</p>
+        <p class="text-vvod"><b>Экспертные системы в БД</b> по запросу пользователя вывод наиболее подходящие данные</p>
+        <p class="text-vvod"><b>Экспертные системы в электронике</b> определяют неисправности в электронных устройствах и дают рекомендации по их исправлению</p>
+        <p class="text-vvod"><b>Экспертные системы в военном деле</b> анализируют геологические особенности местности и разведданные для предсказывания действий противника</p>
+        <p class="text-vvod"><b>Экспертные системы в информатике</b> используются для упрощения интерактивного общения с пользователем</p>
+        <p class="text-vvod"><b>Экспертные системы в компьютерных системах</b> отслеживают состояние компьютеров в компьютерной системе для обеспечения их работоспособности и наибольшей эффективности</p>
+        <p class="text-vvod"><b>Экспертные системы в рекламной деятельности и PR</b> анализируют данные клиентов для проведения более качественной таргетированной рекламы</p>
+        <p class="text-vvod"><b>Экспертные системы в сфере управления процессами</b> могут применяться в качестве интеллектуальных систем контроля и принимать решения, анализируя данные, поступающие от нескольких источников.</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal33" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "Я"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Язык</b> - это сложная система символов, каждый из которых имеет определенное значение. Языковые символы, будучи общепринятыми и соответственно общепонятными в пределах данного сообщества, в процессе речи комбинируются друг с другом, порождая разнообразные по своему содержанию сообщения.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- english letters -->
+
+
+<div class="modal fade" id="Modal36" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "C"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>CALS-технологии (англ. Continuous Acquisition and Life cycle Support — непрерывная информационная поддержка поставок и жизненного цикла изделий), или ИПИ (информационная поддержка процессов жизненного цикла изделий)</b> — информационные технологии, используемые в управлении процессами жизненного цикла изделия или системы, в основном для сложных (высокотехнологичных и наукоёмких) образцов продукции машиностроения и иных объектов техники. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal38" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "E"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>Extreme Programming (XP)</b> – экстремальное программирование (самая новая среди рассматриваемых методологий) сформировалось в 1996 году. В основе методологии командная работа, эффективная коммуникация между заказчиком и исполнителем в течение всего проекта по разработке ИС, а разработка ведется с использованием последовательно дорабатываемых прототипов. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal42" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "I"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>IDL (Язык описания интерфейсов)</b> - Язык спецификаций для описания интерфейсов, синтаксически похожий на описание классов в языке C++ </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal48" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "O"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>ORB</b> (Object Request Broker, то есть брокер объектных запросов) — это объектная шина. Она позволяет объектам напрямую производить и отвечать на запросы других объектов, расположенных как локально (на одном компьютере, но в разных процессах), так и</p>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="Modal52" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Буква "S"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-vvod"><b>SOAP (Simple Object Access Protocol – простой протокол доступа к объектам)</b> - протокол обмена структурированными сообщениями в распределенной вычислительной среде; первоначально предназначался для удаленного вызова процедур (RPC), сейчас используется так же для обмена произвольными сообщениями в формате XML. </p>
+        <p class="text-vvod"><b>SOA</b> — это набор архитектурных принципов, не зависящих от технологий и продуктов, совсем как полиморфизм или инкапсуляция. </p>
+        <p class="text-vvod"><b>Stub-интерфейс</b> - клиентский интерфейс, обеспечивает взаимосвязь клиента с ORB. Прикладная программа клиента через посредника stub, как статической части программы клиента, посылает в запросе параметры, которым сопоставляются соответствующие описания интерфейса из репозитория (хранилище простыми словами) интерфейсов. </p>
+        <p class="text-vvod"><b>Skeleton</b> - это представитель клиента в адресном пространстве сервера </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Выйти</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</main>
+
+
+<!-- partial -->
+  <script src='./assets/js/jquery.js'></script>
+<script src='./assets/js/bootstrap.js'></script>
+<script  src="./assets/js/script.js"></script>
+<script src="./assets/js/addition_scroll_on_page/17.js"></script>
+
+</body>
+</html>
