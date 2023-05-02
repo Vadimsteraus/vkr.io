@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Тестирование №4</title>
+  <link rel='stylesheet' href='./assets/css/bootstrap.css'>
+<link rel='stylesheet' href='./assets/css/font-awesome.css'>
+<link rel="stylesheet" href="./assets/css/style.css">
+<link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+  
+
+  <div class="preloader" id="page-preloader">
+    <div class="loader"></div>
+  </div>
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="logo_text" href="./main_page.html"><img class="logo" src="./assets/icon/logo.svg" alt="logo"><p class="navbar-brand">Электронное пособие по проектированию и дизайну ИС</p></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarCollapse"
+    aria-controls="navbarCollapse"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+    onClick="addFilters()"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto sidenav" id="navAccordion">
+      <li class="nav-item">
+        <a class="nav-link" href="./main_page.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems1"
+        aria-controls="collapseSubItems1"
+        aria-expanded="true">
+        Лекции
+        <span class="sr-only">(current)</span></a>
+        <ul class="nav-second-level collapse" id="collapseSubItems1" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./lection1.html">
+              <span class="nav-link-text">
+                Лекция 1. Основные понятия и определения ИС. Жизненный цикл информационных систем
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection2.html">
+              <span class="nav-link-text">Лекция 2.  Модели жизненных циклов информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection3.html">
+              <span class="nav-link-text">Лекция 3. Технологии сбора информации.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection4.html">
+              <span class="nav-link-text">Лекция 4. Иерархическая структура работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection5.html">
+              <span class="nav-link-text">Лекция 5. Сетевой график выполнения работ.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="16" href="./lection6.html">
+              <span class="nav-link-text">Лекция 6. Техническое задание.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection7.html">
+              <span class="nav-link-text">Лекция 7.1. Сервисно - ориентированные архитектуры.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection8.html">
+              <span class="nav-link-text">Лекция 7.2. Анализ интересов клиента. Выбор вариантов решений.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="./lection9.html">
+              <span class="nav-link-text">Лекция 8. Особенности информационного и прочего программного обеспечения для информационных систем.</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./lection10.html">
+              <span class="nav-link-text">Лекция 9.1. Основные понятия качества информационной системы.</span>
+            </a>
+          </li>
+<li class="nav-item">
+            <a class="nav-link" href="./lection11.html">
+              <span class="nav-link-text">Лекция 9.2. Оценка качества информационных систем.</span>
+            </a>
+          </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./lection12.html">
+            <span class="nav-link-text">Лекция 10. Перечень и комплектность документов на информационные системы согласно ЕСПД и ЕСКД. Задачи документирования.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection13.html">
+            <span class="nav-link-text">Лекция 11. Предпроектная стадия разработки. Техническое задание на разработку основные разделы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection14.html">
+            <span class="nav-link-text">Лекция 12. Построение и оптимизация сетевого графика.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection15.html">
+            <span class="nav-link-text">Лекция 13. Пользовательская документация. Маркетинговая документация.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection16.html">
+            <span class="nav-link-text">Лекция 14. Самодокумен-<br>тирующиеся программы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection17.html">
+            <span class="nav-link-text">Лекция 15. Назначение, виды и оформление сертификатов.</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="./lection12.html">
+            <span class="nav-link-text">Лекция 10. Перечень и комплектность документов на информационные системы согласно ЕСПД и ЕСКД. Задачи документирования.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection13.html">
+            <span class="nav-link-text">Лекция 11. Предпроектная стадия разработки. Техническое задание на разработку основные разделы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection14.html">
+            <span class="nav-link-text">Лекция 12. Построение и оптимизация сетевого графика.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection15.html">
+            <span class="nav-link-text">Лекция 13. Пользовательская документация. Маркетинговая документация.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection16.html">
+            <span class="nav-link-text">Лекция 14. Самодокумен-<br>тирующиеся программы.</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./lection17.html">
+            <span class="nav-link-text">Лекция 15. Назначение, виды и оформление сертификатов.</span>
+          </a>
+        </li>
+      </li>
+    </ul>
+  </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse nav-link-show collapsed"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems2"
+          aria-controls="collapseSubItems2"
+          aria-expanded="true"
+        >Тесты</a>
+        <ul class="nav-second-level collapse collapse show" id="collapseSubItems2" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="test1.html">
+              <span class="nav-link-text">Контрольная работа по теме "Основы проектирования информационных систем"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test2.html">
+              <span class="nav-link-text">Контрольная работа по теме "Процессы объектно-ориентированного анализа и проектирования"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="test3.html">
+              <span class="nav-link-text">Контрольная работа по теме "Система обеспечения качества информационных систем"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" id="17">
+              <span class="nav-link-text">Контрольная работа по теме "Разработка документации информационных систем"</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems3"
+        aria-controls="collapseSubItems3"
+        aria-expanded="true"
+        href="#">Практические работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems3" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="./practice1.html">
+              <span class="nav-link-text">Практическая работа №1. Жизненный цикл информационной системы</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice2.html">
+              <span class="nav-link-text">Практическая работа №2. Системный и структурный анализ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice3.html">
+              <span class="nav-link-text">Практическая работа №3. Категории специалистов</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice4.html">
+              <span class="nav-link-text">Практическая работа №4. Анкета и интервью</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice5.html">
+              <span class="nav-link-text">Практическая работа №5. Классификация информационных систем</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice6.html">
+              <span class="nav-link-text">Практическая работа №6. Иерархическая структура работ</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./practice7.html">
+              <span class="nav-link-text">Практическая работа №7. Сетевой график</span>
+            </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="./practice8.html">
+              <span class="nav-link-text">Практическая работа №8. Техническое задание</span>
+            </a>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" href="practice9.html">
+              <span class="nav-link-text">Практическая работа №9. Определения "SOAP" и "Интересы клиента"</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practice10.html">
+              <span class="nav-link-text">Практическая работа №10. Модель IDEF0</span>
+            </a>
+          </li>      
+          <li class="nav-item">
+            <a class="nav-link" href="practice11.html">
+              <span class="nav-link-text">Практическая работа №11. Описание моделей с использованием нотаций IDEF0 и ETC</span>
+            </a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="practice12.html">
+              <span class="nav-link-text">Практическая работа №12. ТЭО</span>
+            </a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="practice13.html">
+              <span class="nav-link-text">Практическая работа №13. Реинжиниринг методом интеграции</span>
+            </a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="practice14.html">
+              <span class="nav-link-text">Практическая работа №14. Пользовательская документация. Маркетинговая документация</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="practice15.html">
+              <span class="nav-link-text">Практическая работа №15. Изучение средств автоматизи-<br>рованного документирования</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link nav-link-collapse"
+          href="#"
+          id="hasSubItems"
+          data-toggle="collapse"
+          data-target="#collapseSubItems4"
+          aria-controls="collapseSubItems4"
+          aria-expanded="false"
+        >Самостоятельные <br> работы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems4" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link active" href="./independent-work2.html">
+              <span class="nav-link-text">
+                Самостоятельная работа 1. "Основы проектирования информационных систем".
+              </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work2.html">
+              <span class="nav-link-text">Самостоятельная работа 2.1 "Процессы объектно-ориентированного анализа и проектирования".</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work3.html">
+              <span class="nav-link-text">Самостоятельная работа 2.2 "Процессы объектно-ориентированного анализа и проектирования".</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work4.html">
+              <span class="nav-link-text">Самостоятельная работа 3.1 "Система обеспечения качества информационных систем".</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work5.html">
+              <span class="nav-link-text">Самостоятельная работа 3.2 "Система обеспечения качества информационных систем".</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./independent-work6.html">
+              <span class="nav-link-text">Самостоятельная работа 4. "Разработка документации информационных систем".</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a
+        class="nav-link nav-link-collapse"
+        href="#"
+        id="hasSubItems"
+        data-toggle="collapse"
+        data-target="#collapseSubItems5"
+        aria-controls="collapseSubItems5"
+        aria-expanded="true"
+        href="#">Справочные Материалы</a>
+        <ul class="nav-second-level collapse" id="collapseSubItems5" data-parent="#navAccordion">
+          <li class="nav-item">
+            <a class="nav-link" href="glossary.html">
+              <span class="nav-link-text">Глоссарий</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="final-test.html">
+              <span class="nav-link-text">Итоговый тест</span>
+            </a>
+          </li>
+    </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<main class="content-wrapper" id="all">
+  <div class="container-fluid">
+    <div class="change_page">
+      <a  href="test3.html" id="arrow-back"><img title="Тест №3" src="./assets/icon/arrow-left.svg"  alt="back"></a>
+      <a style="opacity: 0; pointer-events: none;" id="next-button" href="./independent-work2.html"><img title="Самостоятельная работа 2.1" src="./assets/icon/arrow-right.svg" alt="next"></a>
+    </div>
+    <br>
+    <h1>Контрольная работа по теме "Разработка документации информационных систем"</h1>
+    <br>
+    <a href="../inner pages/assets/files_to_download/Тестирование/VKR-1.1-pc.zip" class="download"><img style="width: 4vw;position: relative;margin-right: 0vw !important;box-shadow: unset !important;border-radius: 0px !important;" src="./assets/icon/zip.svg">      Скачать файлы для тестирования в виде файла для компьютера </a>
+    <br>
+    <a href="https://vadimsteraus.github.io/vkr.io/inner%20pages/web-game/index.html" class="download">      Пройти тестирование на сайте </a>
+    <br>
+  </div>
+</main>
+
+
+<!-- partial -->
+  <script src='./assets/js/jquery.js'></script>
+<script src='./assets/js/bootstrap.js'></script>
+<script  src="./assets/js/script.js"></script>
+<script src="./assets/js/addition_scroll_on_page/17.js"></script>
+
+</body>
+</html>

@@ -340,7 +340,7 @@ Module['FS_createPath']("/lib/python2.7", "encodings", true, true);
           }
         , preloadFallback);
 
-        if (Module['setStatus']) Module['setStatus']('Downloading...');
+        if (Module['setStatus']) Module['setStatus']('Скачивание...');
       
     }
     if (Module['calledRun']) {
