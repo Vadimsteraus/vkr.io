@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en-us">
+<html lang="ru">
   <!-- Adapted for RenPyWeb from https://github.com/emscripten-core/emscripten/blob/master/src/shell.html -->
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Проектирование и дизайн ИС</title>
+    <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon" />
+    <title>Тестирование</title>
     <script>
       var DEFAULT_GAME_FILENAME = 'game.zip';
     </script>
@@ -203,7 +204,7 @@
           FS.syncfs(false, function(err) {
             if (err) {
               console.trace(); console.log(err, err.message);
-              Module.print("Warning: cannot import savegames: write error: " + err.message + "\n");
+              Module.print("Предупреждение: не получается импортировать данные игры: ошибка записи: " + err.message + "\n");
             } else {
                 renpy_exec('renpy.loadsave.location.scan()').then(result => {
                   Module.print("Saves imported successfully\n");
@@ -238,7 +239,7 @@
             return;
         }
         FS.unlink('/game.zip')
-        Module.print("Extracted in " + (Date.now()-start)/1000.0 + "s\n");
+        Module.print("Извлечено за " + (Date.now()-start)/1000.0 + "c\n");
 
         if (FS.readdir('/').indexOf('game') < 0) {
             Module.setStatus("Invalid .zip (no top-level 'game' directory).");
@@ -270,7 +271,7 @@
           img.style = 'display: block; margin: auto; width: 100%; height: 100%; object-fit: contain';
           div.appendChild(img)
         } else {
-          Module.print("Loading game, please wait...\n");
+          Module.print("Игра загружается, пожалуста подождите...\n");
         }
 
         // give control back to webui before running main
@@ -387,10 +388,10 @@
         totalDependencies: 0,
         monitorRunDependencies: function(left) {
           this.totalDependencies = Math.max(this.totalDependencies, left);
-          Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
+          Module.setStatus(left ? 'Подготовка... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'Загузка была выполнена.');
         }
       };
-      Module.setStatus('Downloading...');
+      Module.setStatus('Скачивание...');
       window.onerror = function(event) {
         // TODO: do not warn on ok events like simulating an infinite loop or exitStatus
         //Module.setStatus('Exception thrown, see JavaScript console');
@@ -399,7 +400,7 @@
         var appleWarning = "";
 
         if (/RangeError/.test(event)) {
-            appleWarning = "\n<p>This is a known issue with this beta and recent changes to some web browsers. Reloading this page with developer tools open may help.";
+            appleWarning = "\n<p>Это известная проблема с этой бета-версией и недавними изменениями в некоторых веб-браузерах. Перезагрузка этой страницы с открытыми инструментами разработчика может помочь.";
         }
 
         Module.setStatus('Error: ' + event.split('\n')[0] + ' (see JavaScript console for details)' + appleWarning);
@@ -563,7 +564,7 @@
           if (err) {
               console.trace(); console.log(err, err.message);
               // Note: not visible enough, quickly replaced by loading status
-              Module.print("Warning: cannot save games\n");
+              Module.print("Предупреждение: не получается сохранить игру\n");
           }
         });
       }
