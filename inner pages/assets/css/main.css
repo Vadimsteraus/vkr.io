@@ -326,6 +326,12 @@ b {
     margin-bottom: 2vh;
 }
 
+@media  (max-width: 991px) {
+  .navbar-brand  {
+    line-height: unset;
+  }
+}
+
 /* Невыделяемый текст */
 
 
