@@ -31,6 +31,17 @@ $('.upbtn').on('click',function() {
 });
 
 
+// изменение цвета кнопки при нажатии
+$(document).ready(function() {
+    $('.btn').on('click', function() {
+      $(this).addClass('active').css('background-color', 'black');
+    });
+  
+    $('.btn').on('mouseup', function() {
+      $(this).removeClass('active');
+    });
+  });
+
 // стрелочка вниз
 
 // $('body').append('<div class="upbtn"></div>');            
