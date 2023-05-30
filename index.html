@@ -1,38 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./inner pages/assets/css/main.css">
-    <link rel="shortcut icon" href="./inner pages/assets/icon/favicon.ico" type="image/x-icon" />
-    <title>Титульная страница</title>
-</head>
-<body>
-    
-    <div class="content">
 
-        <div class="wrapper">
-            <img src="./inner pages/assets/icon/logo.svg" alt="">
-            <div class="main">Электронное пособие по МДК05.01
-                <br>
-                «Проектирование и дизайн информационных систем»</div>
-            <div class="text">Данное пособие предназначено для студентов специальности <br> "Информационные системы и программирование"</div>
-            <div class="button">
-                <a href="./inner pages/main_page.html">
-                    Перейти к главной странице
-                </a>
-            </div>
-            <div class="bottom">
-                <b>Разработчик: Студент группы 18-ОИ Баширов Вадим Расилевич</b>
-                
-                Специальность: 09.02.05 Прикладная информатика (по отраслям)
-                <br>
-                ГБПОУ "Пермский краевой колледж "ОНИКС"
-                
-            </div>
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./inner pages/assets/css/main.css">
+  <link rel="shortcut icon" href="./inner pages/assets/icon/favicon.ico" type="image/x-icon" />
+  <!-- Скрипт для анимированного фона -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+  <script>
+    const PARTICLE_SIZE = 30;
+    const RESOLUTION = 30;
+    const MAX_FORCE = 10;
+    const MIN_FORCE = 0;
+    const EFFECT_DISTANCE = 200;
+
+    let imgUrl = "https://vadimsteraus.github.io/vkr.io/inner%20pages/assets/img/back-tutl.png";
+    let img;
+    let particles = [];
+
+    function preload() {
+      img = loadImage(imgUrl);
+    }
+
+    function setup() {
+      let cnv = createCanvas(windowWidth, windowHeight);
+      cnv.style("display", "block");
+      cnv.style("position", "absolute");
+      cnv.style("inset", 0);
+      cnv.style("z-index", -1);
+      spawnParticles();
+    }
+
+    function draw() {
+      background(40);
+      //image(img, 0, 0, width, height);
+      particles.forEach((particle) => {
+        particle.update();
+        particle.draw();
+      });
+    }
+
+    function spawnParticles() {
+      for (let i = 0; i < width; i += RESOLUTION) {
+        for (let j = 0; j < height; j += RESOLUTION) {
+          let x = (i / width) * img.width;
+          let y = (j / height) * img.height;
+          const color = img.get(x, y);
+          particles.push(
+            new Particle(i + PARTICLE_SIZE / 2, j + PARTICLE_SIZE / 2, color)
+          );
+        }
+      }
+    }
+
+    class Particle {
+      constructor(x, y, color) {
+        this.x = x;
+        this.y = y;
+        this.color = color;
+        this.targetX = x;
+        this.targetY = y;
+      }
+
+      update() {
+        // get vectors for mouse, target, and current position
+        let mouseVector = createVector(mouseX, mouseY);
+        let currentVector = createVector(this.x, this.y);
+        let targetVector = createVector(this.targetX, this.targetY);
+
+        // calculate vector from mouse to particle and its magnitude (distance)
+        let fromMouseToParticle = p5.Vector.sub(currentVector, mouseVector);
+        let distanceToMouse = fromMouseToParticle.mag();
+
+        // calculate vector from particle to target and its magnitude
+        let fromParticleToTarget = p5.Vector.sub(targetVector, currentVector);
+        let distanceToTarget = fromParticleToTarget.mag();
+
+        let totalForce = createVector(0, 0);
+
+        // if mouse is within 100 pixels, calculate a repulsive force
+
+        if (distanceToMouse < EFFECT_DISTANCE) {
+          let respulsionForce = map(distanceToMouse, 0, EFFECT_DISTANCE, MAX_FORCE, MIN_FORCE);
+          fromMouseToParticle.setMag(respulsionForce);
+          totalForce.add(fromMouseToParticle);
+        }
+
+        // if particle is not at tartget, calculate an attractive force
+        if (distanceToMouse > 0) {
+          let attractionForce = map(distanceToTarget, 0, EFFECT_DISTANCE, MIN_FORCE, MAX_FORCE);
+          fromParticleToTarget.setMag(attractionForce);
+          totalForce.add(fromParticleToTarget);
+        }
+
+        // add the forces to the position
+        this.x += totalForce.x;
+        this.y += totalForce.y;
+      }
+
+      draw() {
+        fill(this.color);
+        noStroke();
+        ellipse(this.x, this.y, PARTICLE_SIZE);
+      }
+    }
+
+    function windowResized() {
+      resizeCanvas(windowWidth, windowHeight)
+      particles = [];
+      spawnParticles();
+      draw();
+    }
+
+  </script> -->
+
+  <title>Титульная страница</title>
+</head>
+
+<body>
+
+  <div class="content">
+
+    <div class="wrapper">
+      <img src="./inner pages/assets/icon/logo.svg" alt="">
+      <div class="main">Электронное пособие по МДК05.01
+        <br>
+        «Проектирование и дизайн информационных систем»
+      </div>
+      <div class="text">Данное пособие предназначено для студентов специальности <br> "Информационные системы и
+        программирование"</div>
+      <div class="button">
+        <a href="./inner pages/main_page.html">
+          Перейти к главной странице
+        </a>
+      </div>
+      <div class="bottom">
+        <b>Разработчик: Студент группы 18-ОИ Баширов Вадим Расилевич</b>
+
+        Специальность: 09.02.05 Прикладная информатика (по отраслям)
+        <br>
+        ГБПОУ "Пермский краевой колледж "ОНИКС"
+
+      </div>
     </div>
-    
+  </div>
+
 </body>
 
 </html>
