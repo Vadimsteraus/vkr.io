@@ -767,7 +767,7 @@ td {
   position:relative;
   z-index: 3;
   display: block;
-  width: 100% !important;
+  width: 80% !important;
   font-family: jura;
   color: #3e0cb3;
   text-align: center;
@@ -777,7 +777,8 @@ td {
   line-height: 4.5vh;
 
   margin-top: 2.7vh;
-
+  margin-left: 7vw;
+  margin-right: 7vw;
 
   transition: 1s;
   transition-property: all;
