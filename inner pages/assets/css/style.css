@@ -569,6 +569,12 @@ h2 {
   }
 }
 
+@media (min-width: 2201px) and (max-width: 2600px) {
+  .change_page {
+    width: 95% !important;
+  }
+}
+
 .change_page img {
   border-radius: 100%;
   opacity: 0.5;
@@ -647,10 +653,13 @@ h2 {
 }
 
 li{
-  color: #3a04b9 !important;
   font-weight: 300;
 }
 
+li b{
+  font-weight: 450;
+  color: rgb(255, 0, 106);
+}
 
 @keyframes highlight {
   to {
