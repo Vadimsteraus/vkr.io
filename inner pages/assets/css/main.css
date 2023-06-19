@@ -326,16 +326,13 @@ b {
     margin-bottom: 2vh;
 }
 
-@media  (max-width: 660px) {
-  .bottom  {
-    line-height: unset;
-    margin-bottom: 0.5vh;
-  }
-}
-
 @media  (max-width: 991px) {
   .navbar-brand  {
     line-height: unset;
+  }
+  .bottom  {
+    line-height: unset;
+    margin-bottom: 0.5vh;
   }
 }
 
